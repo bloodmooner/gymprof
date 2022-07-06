@@ -1,0 +1,35 @@
+.promo {
+    padding: 151px 0 0;
+    height: 771px;
+
+}
+.promo__block {
+    width: 795px;
+    background: linear-gradient(145.98deg, #FFFFFF 62.48%, rgba(255, 255, 255, 0) 99.83%);
+    box-shadow: -15px 22px 62px -5px rgba(57, 87, 237, 0.1);
+    backdrop-filter: blur(6px);
+    border-radius: 10px;
+    padding: 25px 30px 25px 15px;
+}
+.promo__label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 134.4%;
+    color: #000000;
+}
+.promo__title {
+    max-width: 750px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 134.4%;
+    color: #000000;
+    margin-top: 20px;
+}
+.promo__buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 470px;
+    margin-top: 40px;
+}

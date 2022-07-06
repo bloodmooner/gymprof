@@ -1,0 +1,50 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+}
+.header__wrapper {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.header__menu {
+    display: flex;
+    align-items: center;
+
+}
+.header__menu-list {
+    display: flex;
+    width: 330px;
+    justify-content: space-between;
+}
+.header__menu-item {
+    ul {
+        display: none;
+
+        li {
+
+        }
+    }
+}
+.header__contacts {
+    width: 474px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__contacts_phone {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 124.4%;
+    color: #000000;
+}
+.header__cart {
+}
+.btn {
+}
+.btn_header {
+}

@@ -1,8 +1,13 @@
 @import 'libs/bootstrap-reboot.min';
+@import 'libs/normalize';
 
 @import 'base/mixins';
 @import 'base/variables';
 @import 'base/animations';
+@import 'base/promo';
+@import 'base/why-we';
+@import 'base/sample';
+@import 'base/header';
 @import 'base/buttons';
 
 
@@ -30,23 +35,31 @@ Montserrat: 300, 400, 500, 700
   font-family: 'Montserrat', sans-serif;
 }
 
-ul, ol {
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
-h1, h2, h3, h4, h5, h6, p, label {
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
-input, button, textarea {
-  outline: none;
-}
-
 section, header, footer {
   width: 100%;
   margin: 0 auto;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+ul, li{
+list-style-type: none;
+}
+ul, li, a {
+text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, label {
+  margin: 0;
+  padding: 0;
+}
+
+input, button, textarea {
+outline: none;
+padding: 0;
+margin: 0;
 }
 
 .container {
@@ -82,6 +95,9 @@ button:active, button:focus {
   outline: none;
 }
 button::-moz-focus-inner {
+  border: 0;
+}
+button {
   border: 0;
 }
 
