@@ -1,0 +1,105 @@
+@import 'libs/bootstrap-reboot.min';
+
+@import 'base/mixins';
+@import 'base/variables';
+@import 'base/animations';
+@import 'base/buttons';
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+
+
+/*
+
+
+Montserrat: 300, 400, 500, 700
+
+*/
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul, ol {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, label {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+input, button, textarea {
+  outline: none;
+}
+
+section, header, footer {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1480px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+
+  @include for-desk {
+    max-width: 1150px;
+  }
+
+
+  @include for-tablet-landscape {
+    max-width: 100%;
+    padding: 0 45px;
+  }
+  @include for-tablet-portrait {
+    max-width: 100%;
+    padding: 0 36px;
+  }
+  @include for-phone {
+    max-width: 100%;
+    padding: 0 36px;
+  }
+}
+.thanks-or-error__container {
+  @include for-phone {
+      padding: 0 19px;
+  }
+}
+button:active, button:focus {
+  outline: none;
+}
+button::-moz-focus-inner {
+  border: 0;
+}
+
+body {
+  background: #FAF8F8;
+}
+
+
+
+slick-track {
+  display: flex !important;
+}
+
+.slick-slide {
+  height: auto;
+}
+
+*{
+  min-height: 0;
+  min-width: 0;
+  }
