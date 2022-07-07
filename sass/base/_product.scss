@@ -139,6 +139,9 @@
         font-size: 16px;
         line-height: 135%;
         color: #FFFFFF;
+        &:hover {
+            color: #000000;
+        }
     }
 
     &__to-cart {
@@ -148,7 +151,11 @@
         font-weight: 700;
         font-size: 16px;
         line-height: 135%;
-        color: #000000;
+        background: linear-gradient(90deg, #000000 0%, #000000 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
         &::after {
             content: '';
             position: absolute;
@@ -156,7 +163,17 @@
             left: 0;
             width: 100%;
             height: 1px;
-            background-color: #000000;
+            background: #000000;
+        }
+        &:hover {
+            background: linear-gradient(90deg, #015EEA 0%, #00F2FE 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            &::after {
+                background: linear-gradient(90deg, #015EEA 0%, #00F2FE 100%);
+            }
         }
     }
 
@@ -266,7 +283,22 @@
         font-weight: 700;
         font-size: 16px;
         line-height: 135%;
-        color: #000000;
+        span {
+            background: linear-gradient(90deg, #000000 0%, #000000 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+        &:hover {
+            span {
+                background: linear-gradient(90deg, #015EEA 0%, #00F2FE 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-fill-color: transparent;
+            }
+        }
     }
 }
 

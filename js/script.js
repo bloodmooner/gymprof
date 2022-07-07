@@ -51,5 +51,18 @@ $(document).ready(function(){
         
     });
   });
+
+
+
+  $('.tabs-controls__item').click(function(){
+    $('.tabs-controls__item').removeClass('tabs-controls__item_active');
+    $(this).addClass('tabs-controls__item_active');
+
+
+    $('.order__tabs-item').removeClass('order__tabs-item_active');
+    $($(".order__tabs-item")[$(this).index()]).addClass('order__tabs-item_active');
+  });
+
+
 });
 
