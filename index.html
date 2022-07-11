@@ -8,45 +8,53 @@
   <title>Gym Prof</title>
 
 
- 
-
+  <link rel="stylesheet" type="text/css" href="assets/libs/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="assets/libs/fancy/jquery.fancybox.min.css"/>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <section class="promo" style="background: url(assets/img/index/index-bg-min.png) center center/cover no-repeat;">
-        <header class="header">
-            <div class="container">
-                <div class="header__wrapper">
-                    <nav class="header__menu">
-                        <ul class="header__menu-list">
-                            <li class="header__menu-item">
-                                <a href="">Ковры</a>
-                                <ul>
-                                    <li><a href="">Ковры для художественной гимнастики</a></li>
-                                    <li><a href="">Ковры для спортивной гимнастики</a></li>
-                                </ul>
-                            </li>
-                            <li class="header__menu-item"><a href="">Помосты</a></li>
-                            <li class="header__menu-item"><a href="">Для дилеров</a></li>
-                        </ul>
-                    </nav>
-                    <div class="header__contacts">
-                        <a href="tel:+7 963 720-90-00" class="header__contacts_phone">+7 963 720-90-00</a>
-                        <div class="header__cart"></div>
-                        <button class="btn btn_header">Связаться с нами</button>
+    <section class="promo">
+        <div class="promo__bg" style="background: url(assets/img/index/index-bg-min.png) center 100%/cover no-repeat;">
+            <header class="header">
+                <div class="container">
+                    <div class="header__wrapper">
+                        <nav class="header__menu">
+                            <ul class="header__menu-list">
+                                <li class="header__menu-item">
+                                    <a href="" class="header__menu-link">Ковры <span><img src="assets/svg/dropdown-arrow.svg" alt="" width="9" height="4"></span></a>
+                                    <ul>
+                                        <li><a href="">Ковры для художественной гимнастики</a></li>
+                                        <li><a href="">Ковры для спортивной гимнастики</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header__menu-item"><a href="">Помосты</a></li>
+                                <li class="header__menu-item"><a href="">Для дилеров</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header__logo">
+                            <a href=""><img src="assets/svg/logo.svg" alt="" width="48" height="56"></a>
+                        </div>
+                        <div class="header__contacts">
+                            <a href="tel:+7 963 720-90-00" class="header__contacts_phone">+7 963 720-90-00</a>
+                            <a href="" class="header__cart">
+                                <img src="assets/svg/cart.svg" alt="">
+                                <span>12</span>
+                            </a>
+                            <button class="btn btn_header">Связаться с нами</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </header>
-        <div class="container">
-            <div class="promo__block">
-                <h2 class="promo__label">Gym Professional</h2>
-                <h1 class="promo__title">Ковры и помосты для гимнастики 
-                    от производителя
-                </h1>
-                <div class="promo__buttons">
-                    <button class="btn btn_promo">Оставить заявку</button>
-                    <button class="btn btn_promo_catalog">Смотреть каталог</button>
+            </header>
+            <div class="container">
+                <div class="promo__block">
+                    <h2 class="promo__label">Gym Professional</h2>
+                    <h1 class="promo__title">Ковры и помосты для гимнастики 
+                        от производителя
+                    </h1>
+                    <div class="promo__buttons">
+                        <button class="btn btn_promo">Оставить заявку</button>
+                        <button class="btn btn_promo_catalog">Смотреть каталог</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -103,12 +111,207 @@
                 </div>
             </div>
         </section>
+        <section class="catagorys">
+            <div class="container">
+                <h2 class="categorys__title">Наша продукция</h2>
+                <ul class="categorys__wrapper">
+                    <li class="categorys__item">    
+                        <div class="categorys__item_top">
+                            <a href=""><img src="assets/img/index/products/products-1-min.png" alt="Ковры для художественной гимнастики" width="480" height="560"></a>
+                        </div>
+                        <div class="categorys__item_bottom">
+                            <a href=""><h3>Ковры для художественной гимнастики</h3></a>
+                            <a href="" class="btn btn_categorys">Перейти &rarr;</a>
+                        </div>
+                    </li>
+                    <li class="categorys__item">    
+                        <div class="categorys__item_top">
+                            <a href=""><img src="assets/img/index/products/products-2-min.png" alt="Ковры для художественной гимнастики" width="480" height="560"></a>
+                        </div>
+                        <div class="categorys__item_bottom">
+                            <a href=""><h3>Ковры для художественной гимнастики</h3></a>
+                            <a href="" class="btn btn_categorys">Перейти &rarr;</a>
+                        </div>
+                    </li>
+                    <li class="categorys__item">    
+                        <div class="categorys__item_top">
+                            <a href=""><img src="assets/img/index/products/products-3-min.png" alt="Ковры для художественной гимнастики" width="480" height="560"></a>
+                        </div>
+                        <div class="categorys__item_bottom">
+                            <a href=""><h3>Ковры для художественной гимнастики</h3></a>
+                            <a href="" class="btn btn_categorys">Перейти &rarr;</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="clients">
+            <div class="container">
+                <h2 class="clients__title">Наши клиенты</h2>
+                <ul class="clients__wrapper">
+                    <li class="clients__item"><img src="assets/img/index/clients/clients-1-min.png" alt="Наши клиенты"></li>
+                    <li class="clients__item"><img src="assets/img/index/clients/clients-2-min.png" alt="Наши клиенты"></li>
+                    <li class="clients__item"><img src="assets/img/index/clients/clients-3-min.png" alt="Наши клиенты"></li>
+                    <li class="clients__item"><img src="assets/img/index/clients/clients-4-min.png" alt="Наши клиенты"></li>
+                    <li class="clients__item"><img src="assets/img/index/clients/clients-5-min.png" alt="Наши клиенты"></li>
+                    <li class="clients__item"><img src="assets/img/index/clients/clients-6-min.png" alt="Наши клиенты"></li>
+                    <li class="clients__item"><img src="assets/img/index/clients/clients-7-min.png" alt="Наши клиенты"></li>
+                    <li class="clients__item"><img src="assets/img/index/clients/clients-8-min.png" alt="Наши клиенты"></li>
+                </ul>
+            </div>
+        </section>
+        <section class="certificates">
+            <div class="container">
+                <h2 class="certificates__title">Сертификаты</h2>
+                <div class="certificates__wrapper">
+
+                    <div class="certificates__item">
+                        <a href="assets/img/index/cert/1.png" data-fancybox="gallery">
+                            <img src="assets/img/index/cert/1.png" alt="" width="190" height="260" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="certificates__item">
+                        <a href="assets/img/index/cert/2.png" data-fancybox="gallery">
+                            <img src="assets/img/index/cert/2.png" alt="" width="190" height="260" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="certificates__item">
+                        <a href="assets/img/index/cert/3.png" data-fancybox="gallery">
+                            <img src="assets/img/index/cert/3.png" alt="" width="190" height="260" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="certificates__item">
+                        <a href="assets/img/index/cert/4.png" data-fancybox="gallery">
+                            <img src="assets/img/index/cert/4.png" alt="" width="190" height="260" loading="lazy">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials">
+            <div class="container">
+                <h2 class="testimonials__title">Отзывы о нашей работе</h2>
+                <ul class="testimonials__wrapper">
+                    <li class="testimonials__item">
+                        <a href="assets/img/index/reviews/review-1-min.jpg" data-fancybox="gallery">
+                            <img src="assets/img/index/reviews/review-1-min.jpg" alt="" width="355" height="355" loading="lazy">
+                        </a>
+                    </li>
+                    <li class="testimonials__item">
+                        <a href="assets/img/index/reviews/review-2-min.jpg" data-fancybox="gallery">
+                            <img src="assets/img/index/reviews/review-2-min.jpg" alt="" width="355" height="355" loading="lazy">
+                        </a>
+                    </li>
+                    <li class="testimonials__item">
+                        <a href="assets/img/index/reviews/review-3-min.jpg" data-fancybox="gallery">
+                            <img src="assets/img/index/reviews/review-3-min.jpg" alt="" width="355" height="355" loading="lazy">
+                        </a>
+                    </li>
+                    <li class="testimonials__item">
+                        <a href="assets/img/index/reviews/review-4-min.jpg" data-fancybox="gallery">
+                            <img src="assets/img/index/reviews/review-4-min.jpg" alt="" width="355" height="355" loading="lazy">
+                        </a>
+                    </li>
+                    <li class="testimonials__item">
+                        <a href="assets/img/index/reviews/review-5-min.jpg" data-fancybox="gallery">
+                            <img src="assets/img/index/reviews/review-5-min.jpg" alt="" width="355" height="355" loading="lazy">
+                        </a>
+                    </li>
+                    <li class="testimonials__item">
+                        <a href="assets/img/index/reviews/review-6-min.jpg" data-fancybox="gallery">
+                            <img src="assets/img/index/reviews/review-6-min.jpg" alt="" width="355" height="355" loading="lazy">
+                        </a>
+                    </li>
+                    <li class="testimonials__item">
+                        <a href="assets/img/index/reviews/review-7-min.jpg" data-fancybox="gallery">
+                            <img src="assets/img/index/reviews/review-7-min.jpg" alt="" width="355" height="355" loading="lazy">
+                        </a>
+                    </li>
+                    <li class="testimonials__item">
+                        <a href="assets/img/index/reviews/review-8-min.jpg" data-fancybox="gallery">
+                            <img src="assets/img/index/reviews/review-8-min.jpg" alt="" width="355" height="355" loading="lazy">
+                        </a>
+                    </li>
+                </ul>
+                <button class="btn_testimonials">Посмотреть ещё</button>
+            </div>
+        </section>
+        <section class="applications">
+            <div class="container">
+                <div class="applications__wrapper">
+                    <div class="applications__details">
+                        <h2>Оставьте заявку</h2>
+                        <h3>и получите <span>бесплатный</span> образец!</h3>
+                        <p>Наши менеджеры свяжутся с Вами в ближайшее время</p>
+                        <img src="assets/img/index/order-bg.svg" alt="" width="620" height="174" loading="lazy">
+                    </div>
+                    <div class="applications__inner">
+                        <form action="#" class="applications__form">
+                            <div class="applications__name">
+                                <label for="applications__name">Имя</label>
+                                <input type="text" class="applications__input" placeholder="Ваше имя" id="applications__name">
+                            </div>
+                            <div class="applications__phone">
+                                <label for="applications__phone">Телефон*</label>
+                                <input type="text" class="applications__input" placeholder="+7 (495) 012-34-56" id="applications__phone">
+                            </div>
+                            <button class="btn btn_form">Оставить заявку</button>
+                            <p class="applications__politics">Нажав на кнопку, соглашаюсь на обработку <a href="" target="_blank">персональных данных</a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
     </main>
     <!-- Main End -->
 
 
     <footer class="footer">
-        
+        <div class="container">
+            <div class="footer__block">
+                <div class="footer__block_logo">
+                    <a href=""><img src="assets/svg/footer-logo.svg" alt="logo" width="94" height="113" loading="lazy"></a>
+                    <ul class="footer__block_social">
+                        <li><a href=""><img src="assets/svg/footer-vk.svg" alt="" width="26" height="26" loading="lazy"></a></li>
+                        <li><a href=""><img src="assets/svg/footer-insta.svg" alt="" width="22" height="22" loading="lazy"></a></li>
+                        <li><a href=""><img src="assets/svg/footer-telegram.svg" alt="" width="22" height="22" loading="lazy"></a></li>
+                    </ul>
+                </div>
+                <ul class="footer__block_menu">
+                    <li><a href="">Ковры для худ. гимнастики</a></li>
+                    <li><a href="">Ковры для спорт. гимнастики</a></li>
+                    <li><a href="">Помосты</a></li>
+                    <li><a href="">Для дилеров</a></li>
+                </ul>
+            </div>
+            <div class="footer__contacts">
+                <div>
+                    <h3>Контакты:</h3>
+                    <div class="footer__contacts_block">
+                        <div class="footer__contacts_mail">
+                            <img src="assets/svg/footer-mail.svg" alt="Контактная почта магазина" width="44" height="30" loading="lazy">
+                            <a href="mailto:Order@Gymprof.ru">Order@Gymprof.ru</a>
+                        </div>
+                        <div class="footer__contacts_phone">
+                            <img src="assets/svg/footer-phone.svg" alt="Контактный телефон магазина" width="44" height="30" loading="lazy">
+                            <a href="tel:+7 963 720-90-00">+7 963 720-90-00</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h3>Реквизиты:</h3>
+                        <ul class="footer__requisites_block">
+                            <li>ИП Орас Юрий Валерьевич</li>
+                            <li>ОГРНИП: 322774600014371</li>
+                            <li>ИНН: 772206637305</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
 
@@ -116,7 +319,9 @@
   src="https://code.jquery.com/jquery-3.6.0.min.js"
   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
   crossorigin="anonymous"></script>
-  
+  <script src="assets/libs/slick/slick.js"></script>
+  <script src="assets/libs/fancy/jquery.fancybox.min.js"></script>
+
   <script src="js/script.js"></script>
 </body>
 </html>

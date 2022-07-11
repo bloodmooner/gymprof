@@ -1,0 +1,21 @@
+.testimonials {
+    padding: 40px 0;
+}
+.testimonials__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 113.4%;   
+    color: #000000;
+}
+.testimonials__wrapper {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px 0;
+}
+.testimonials__item {
+    border-radius: 10px;
+    overflow: hidden;
+}

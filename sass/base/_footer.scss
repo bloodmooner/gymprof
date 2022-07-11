@@ -1,0 +1,115 @@
+.footer {
+    margin-top: 40px;
+    padding: 60px 0;
+    background: #161313;
+}
+.footer__block {
+    max-width: 1004px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__block_logo {
+}
+.footer__block_social {
+    display: flex;
+    justify-content: space-between;
+    width: 110px;
+    margin-top: 20px;
+}
+.footer__block_menu {
+    display: flex;
+    gap: 76px;
+    padding-top: 34px;
+
+    li {
+        max-width: 191px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;        
+
+        a {
+            color: #FFFFFF;
+        }
+    }
+}
+.footer__contacts {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+
+    h3 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 113.4%;
+        color: #FFFFFF;
+    }
+}
+.footer__contacts_block {
+    display: flex;
+    gap: 45px;
+    margin-top: 25px;
+}
+.footer__contacts_mail {
+
+    img {
+        max-width: 100%;
+        height: auto;
+        margin-right: 20px;
+    }
+    a {
+        position: relative;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 134.4%;
+        color: #FFFFFF;
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 1px;
+            width: 100%;
+            background: #ffffff;
+        }
+    }
+}
+.footer__contacts_phone {
+    img {
+        max-width: 100%;
+        height: auto;
+        margin-right: 10px;
+    }
+    a {
+        position: relative;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 134.4%;
+        color: #FFFFFF;
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 7%;
+            height: 1px;
+            width: 93%;
+            background: #ffffff;
+        }
+    }
+}
+.footer__requisites_block {
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+
+    li {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 134.4%;
+        color: #FFFFFF;
+    }
+}

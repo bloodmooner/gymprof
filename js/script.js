@@ -1,6 +1,35 @@
 
 $(document).ready(function(){
 
+
+  $('.header__menu-list .header__menu-item:first-child a').on('click', function( e ){
+    e.preventDefault();
+    // $('.header__menu-item').toggleClass('active');
+
+  });
+  $('.header__menu-list .header__menu-item:first-child a').on('mouseover', function(){
+    $('.header__menu-item').addClass('active');
+  });
+  $('.header__menu-list .header__menu-item:first-child a').on('mouseout', function(){
+    $('.header__menu-item').removeClass('active');
+  });
+
+
+    $('.certificates__wrapper').slick({
+        'slidesToShow': 4,
+        'arrows': false,
+      });
+
+    $('.product-slider__wrapper').slick({
+        'vertical': true,
+        'slidesToShow': 3,
+        'arrows': true,
+        nextArrow: $(document).find('.product-slider__arrow_bottom'),
+        prevArrow: $(document).find('.product-slider__arrow_top'),
+      });
+
+
+
     $('.product-slider__wrapper').slick({
         'vertical': true,
         'slidesToShow': 3,

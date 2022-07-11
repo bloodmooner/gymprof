@@ -66,3 +66,68 @@
     border-radius: 10px;
     color: #000000;
 }
+.btn_categorys {
+    width: 194px;
+    height: 50px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 134.4%;
+    color: #000000;
+    margin-top: 36px;
+
+    &:hover {
+        color: #000000;
+        text-decoration: none;
+    }
+}
+.btn_testimonials {
+    position: relative;
+    display: block;
+    width: 145px;
+    height: 22px;
+    background: transparent;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 134.4%;
+    color: #000000;
+    margin: 0 auto;
+    margin-top: 40px;
+
+    &:hover {
+        text-decoration: none;
+        background: linear-gradient(90deg, #015EEA 0%, #00F2FE 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+
+        &::after {
+            background: linear-gradient(90deg, #015EEA 0%, #00F2FE 100%);
+        }
+    }
+}
+.btn_testimonials::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, #000000 0%, #000000 100%);
+}
+.btn_form {
+    width: 262px;
+    height: 58px;
+    background: linear-gradient(90deg, #015EEA 0%, #00F2FE 100%);
+    border-radius: 30px;
+    margin-top: 40px;
+
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}

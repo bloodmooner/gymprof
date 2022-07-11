@@ -1,0 +1,32 @@
+.certificates {
+    padding: 40px 0;
+}
+.certificates__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 113.4%;
+    color: #000000;
+}
+.certificates__wrapper {
+    margin-top: 60px;
+}
+.certificates__wrapper .slick-slide {
+    margin: 0 10px;
+}
+.certificates__item {
+    background: #FFFFFF;
+    box-shadow: 4px 4px 4px rgba(203, 203, 203,  0.3);
+    border-radius: 10px;
+    padding: 25px 80px;
+    
+    a {
+        display: block;
+        width: 100%;
+        img {
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+}
