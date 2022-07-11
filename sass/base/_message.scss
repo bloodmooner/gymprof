@@ -1,0 +1,24 @@
+.message {
+    margin-top: 80px;
+    &__wrapper {
+        max-width: 695px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    &__text {
+        p {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 135%;
+            text-align: center;
+            letter-spacing: 0.035em;
+            color: #000000;
+            span {
+                background: -webkit-gradient(linear, left top, right top, from(#65F0F4), to(#3957ED));
+                    background: linear-gradient(90deg, #65F0F4 0%, #3957ED 100%);
+            }
+        }
+    }
+}

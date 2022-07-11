@@ -75,26 +75,46 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="product-slider__bottom">
+                                    <div class="product-slider__dots"></div>
+                                    <div class="product-slider__additional">
+                                        <div class="product-slider__additional-item">
+                                            <img src="assets/img/product/product-360.png" alt="">
+                                        </div>
+                                        <div class="product-slider__additional-item">
+                                            <img src="assets/img/product/product-youtube-min.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="product__image">
 
                                 <div class="product__image-slider">
-                                    <div class="product__image-item">
+                                    <div class="product__image-item slide">
                                         <img src="assets/img/product/product-main-ps.png" alt="main-image">
                                     </div>
-                                    <div class="product__image-item">
+                                    <div class="product__image-item slide">
                                         <img src="assets/img/product/product-main-ps.png" alt="main-image">
                                     </div>
-                                    <div class="product__image-item">
+                                    <div class="product__image-item slide">
                                         <div class="video__content">
                                             
-                                            <div class="video__play-btn"><img class="video__play-icon" src="assets/svg/product/yt-log.svg" alt="" width="144" height="144"></div>
+                                            <span class="video__play-btn"><img class="video__play-icon" src="assets/svg/product/yt-log.svg" alt="" width="144" height="144"></>
                                             
                                             <div class="youtube" id="nvz08Bl4FwM" style="width:100%;height:100%;"></div>
                                         </div>
                                     </div>
-                                    <div class="product__image-item">
-                                        <img src="assets/img/product/product-main-ps.png" alt="main-image">
+                                    <div class="product__image-item slide">
+                                        <img src="assets/img/product/3d/carpet_2_1.jpg" width="100%" height="625"
+                                            class="reel product__reel"
+                                            id="image"
+                                            data-images="assets/img/product/3d/carpet_2_#.jpg"
+                                            data-frames="36"
+                                            
+                                            data-responsive="true"
+                                            data-speed="0.25"
+                                            data-brake="0.25"
+                                            data-revolution="300">
                                     </div>
                                 </div>
                             </div>
@@ -146,7 +166,10 @@
                             </div>
                             <div class="product__buttons">
                                 <button class="product__oneclick">Купить в один клик</button>
-                                <button class="product__to-cart">В корзину</button>
+                                <button class="product__to-cart">
+                                    <img class="product__to-cart_icon" src="assets/svg/cart.svg" alt="" >
+                                    <span>В корзину</span>
+                                </button>
                             </div>
                             <div class="product__description">
                                 <p class="product__description-text">
@@ -181,12 +204,44 @@
                                         <a class="product__aside-link" href="#" >Смотреть все характеристики</a>
                                     </div>
                                 </div>
+                                <div class="product__description-items product__description-items_mob">
+                                    <div class="product__description-item">
+                                        <div class="product__description-content">
+                                            <h4 class="product__description-title">
+                                                100% полиамид
+                                            </h4>
+                                            <p class="product__description-descr">
+                                                Мы являемся производителем ковров, не имеющих аналога на рынке, поэтому мы предоставляем самую лучшую рыночную цену! 
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="product__description-item">
+                                        <div class="product__description-content">
+                                            <h4 class="product__description-title">
+                                                Матовый велюр
+                                            </h4>
+                                            <p class="product__description-descr">
+                                                Полное отсутствие блеска. Одноуровневая поверхность. Производим сверхкачественные ковры из микроволоконной нити, за счёт чего ковёр получается очень мягким и приятным на ощупь
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="product__description-item">
+                                        <div class="product__description-content">
+                                            <h4 class="product__description-title">
+                                                Подложка Twin SportⓇ
+                                            </h4>
+                                            <p class="product__description-descr">
+                                                Состоит из 2-х слоев: Высококачественный слой 1-й джутовая основа - убирает эффект «мятого» ковра, 2-й слой из плотного,  иглопробивного войлока - обеспечивает дополнительную мягкость и амортизацию 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="product__free">
                                     <div class="product__free-content">
                                         <h3 class="product__free-title">
                                             Закажите бесплатный образец!
                                         </h3>
-                                        <button class="product__free-order">
+                                        <button class="product__free-order js-open-modal-analysis">
                                             <span>Заказать</span>
                                         </button>
                                     </div>
@@ -260,11 +315,96 @@
 
     
 
+    <div class="container">
+        <!-- <img src="assets/img/product/3d/carpet_2_1.jpg" width="160" height="120"
+      class="reel"
+      id="image"
+      data-images="assets/img/product/3d/carpet_2_#.jpg"
+      data-frames="36"
+      data-loops="false"
+      data-speed="0.5"
+      data-revolution="100"> -->
+
+    </div>
     
 
 
     <footer class="footer">
         
+
+        <!-- Подложка под модальным окном -->
+        <div class="overlays js-overlay-modal">
+            <div class="modal modal_order">
+                <div class="modal__container">
+                    <div class="modal__close">
+                        <img class="modal__close-icon" src="assets/svg/modal-close.svg" alt="close-modal" >
+                    </div>
+                    <div class="application application_modal">
+                        <div class="container">
+                            <div class="application__wrapper">
+                                <div class="application__outer">
+                                    <div class="application__name">
+                                        <h2 class="title application__title">
+                                            <span>Оставить заявку</span>
+                                        </h2>
+                                    </div>
+                                    <div class="application__inner">
+                                        <form action="#" class="application__form">
+                                            <input type="text" class="application__input" placeholder="Имя*">
+                                            <input type="text" class="application__input" placeholder="Телефон*">
+                                            <input type="text" class="application__input" placeholder="Почта">
+                                            <button class="btn application__btn btn_bwbtn">
+                                                <span>Оставить заявку</span>
+                                            </button>
+                                        </form>
+                                        <div class="application__polytics">
+                                            <p class="application__polytics-text">
+                                                Нажав на кнопку, соглашаюсь на обработку <a class="application__link" href="politic.html" target="_blank">персональных данных</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal modal_analysis">
+                <div class="modal__container">
+                    <div class="modal__close">
+                        <img class="modal__close-icon" src="assets/svg/modal-close.svg" alt="close-modal" >
+                    </div>
+                    <div class="application application_modal">
+                        <div class="container">
+                            <div class="application__wrapper">
+                                <div class="application__outer">
+                                    <div class="application__name">
+                                        <h2 class="title application__title">
+                                            <span>Закажите образец</span>
+                                        </h2>
+                                    </div>
+                                    <div class="application__inner">
+                                        <form action="#" class="application__form">
+                                            <input type="text" class="application__input" placeholder="Имя*">
+                                            <input type="text" class="application__input" placeholder="Телефон*">
+                                            <input type="text" class="application__input" placeholder="Почта">
+                                            <button class="btn application__btn btn_bwbtn">
+                                                <span>Оставить заявку</span>
+                                            </button>
+                                        </form>
+                                        <div class="application__polytics">
+                                            <p class="application__polytics-text">
+                                                Нажав на кнопку, соглашаюсь на обработку <a class="application__link" href="politic.html" target="_blank">персональных данных</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
 
@@ -272,6 +412,11 @@
   src="https://code.jquery.com/jquery-3.6.0.min.js"
   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
   crossorigin="anonymous"></script>
+
+  <script
+  src="http://code.vostrel.cz/jquery.reel.js"
+  ></script>
+
   <script src="assets/libs/slick/slick.js"></script>
   
   <script src="js/script.js"></script>

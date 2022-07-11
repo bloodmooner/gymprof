@@ -1,6 +1,10 @@
 .additional {
     margin-top: 60px;
     margin-bottom: 80px;
+    @include for-phone-portrait {
+        margin-top: 50px;
+        margin-bottom: 60px;
+    }
     &__wrapper {
     }
 
@@ -11,12 +15,22 @@
         font-size: 24px;
         line-height: 114%;
         color: #000000;
+        @include for-phone-portrait {
+            padding: 0 20px;
+            margin-bottom: 40px;
+        }
     }
 
     &__items {
         display: grid;
         grid-template-columns: repeat(2, 355px);
         gap: 20px;
+        @include for-tablet-portrait {
+            grid-template-columns: repeat(2, 329px);
+        }
+        @include for-phone-portrait {
+            grid-template-columns: 1fr;
+        }
     }
 
     &__item {
@@ -40,6 +54,9 @@
 
     &__content {
         padding: 10px 15px 40px 15px;
+        @include for-phone-portrait {
+            padding: 10px 20px 40px 20px;
+        }
     }
 
     &__name {
@@ -50,10 +67,16 @@
         font-size: 16px;
         line-height: 135%;
         color: #000000;
+        @include for-phone-portrait {
+            height: 70px;
+        }
     }
 
     &__bottom {
         margin-top: 20px;
+        @include for-phone-portrait {
+            margin-top: 30px;
+        }
     }
 
     &__competitor {

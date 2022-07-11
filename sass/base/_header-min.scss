@@ -1,0 +1,31 @@
+.header-min {
+    margin-top: 40px;
+    &__wrapper {
+        position: relative;
+    }
+
+    &__logo {
+    }
+
+    &__badge {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        padding: 6px 13px;
+        background: linear-gradient(90.05deg, #015EEA 0.04%, #00F2FE 131.18%);
+        box-shadow: -15px 22px 62px -5px rgba(57, 87, 237, 0.1);
+        border-radius: 10px;
+        h1 {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 135%;
+            letter-spacing: 0.035em;
+            color: #FFFFFF;
+        }
+    }
+
+    &__badge-title {
+    }
+}

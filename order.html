@@ -14,26 +14,16 @@
 </head>
 <body>
     
-    <header class="header">
+    <header class="header-min">
         <div class="container">
-            <div class="header__wrapper">
-                <nav class="header__menu">
-                    <ul class="header__menu-list">
-                        <li class="header__menu-item">
-                            <a href="">Ковры</a>
-                            <ul>
-                                <li><a href="">Ковры для художественной гимнастики</a></li>
-                                <li><a href="">Ковры для спортивной гимнастики</a></li>
-                            </ul>
-                        </li>
-                        <li class="header__menu-item"><a href="">Помосты</a></li>
-                        <li class="header__menu-item"><a href="">Для дилеров</a></li>
-                    </ul>
-                </nav>
-                <div class="header__contacts">
-                    <a href="tel:+7 963 720-90-00" class="header__contacts_phone">+7 963 720-90-00</a>
-                    <div class="header__cart"></div>
-                    <button class="btn btn_header">Связаться с нами</button>
+            <div class="header-min__wrapper">
+                <a href="index.html" class="header-min__logo">
+                    <img src="assets/svg/logo.svg" alt="">
+                </a>
+                <div class="header-min__badge">
+                    <h1 class="header-min__badge-title">
+                        Оформление заказа
+                    </h1>
                 </div>
             </div>
         </div>
@@ -41,13 +31,16 @@
         
     
     <!-- Main Start -->
-    <main class="main" style="margin-top: 150px;">
+    <main class="main">
         
 
         <section class="order">
             <div class="container">
                 <div class="order__wrapper">
-                    <h3 class="order__title">Данные покупателя</h3>
+
+                    <div class="order__left">
+
+                        <h3 class="order__title">Данные покупателя</h3>
 
                     <div class="tabs-controls">
                         <div class="tabs-controls__item tabs-controls__item_active">
@@ -67,182 +60,275 @@
 
                         <div class="order__tabs-item order__tabs-item_active">
 
-                            <div class="order__steps">
+                            <div class="order__tabs-content">
 
-                                <div class="order__step">
-                                    <div class="order__step-content">
-                                        <h4 class="order__step-title">Получатель</h4>
-                                        <p class="order__step-subtitle">Данные нужны для курьера и сообщений об изменениях статуса вашего заказа</p>
-        
-                                        <div class="order__contact">
-                                            <input class="order__input" type="text" placeholder="Имя*">
-                                            <input class="order__input" type="text" placeholder="Фамилия">
-                                            <input class="order__input" type="text" placeholder="Телефон*">
-                                            <input class="order__input" type="text" placeholder="Почта">
+                                <div class="order__tabs-left">
+                                    <div class="order__steps">
+
+                                        <div class="order__step">
+                                            <div class="order__step-content">
+                                                <h4 class="order__step-title">Получатель</h4>
+                                                <p class="order__step-subtitle">Данные нужны для курьера и сообщений об изменениях статуса вашего заказа</p>
+                
+                                                <div class="order__contact">
+                                                    <input class="order__input" type="text" placeholder="Имя*">
+                                                    <input class="order__input" type="text" placeholder="Фамилия">
+                                                    <input class="order__input" type="text" placeholder="Телефон*">
+                                                    <input class="order__input" type="text" placeholder="Почта">
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                        <div class="order__step">
+                                            <div class="order__step-content">
+                                                <h4 class="order__step-title">Адрес доставки</h4>
+                
+                                                <div class="order__address">
+                                                    <textarea name="" id="" cols="30" rows="10" placeholder="Комментарий к доставке"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                        <div class="order__step">
+                                            <div class="order__step-content">
+                                                <h4 class="order__step-title">Доставка</h4>
+                
+                                                <p class="order__items-counter">1 товар</p>
+                                                
+                                                <div class="order__items">
+                                                    <div class="order__item">
+                                                        <img src="assets/img/cart/cart-image-min.png" alt="">
+                                                    </div>
+                                                    <div class="order__item">
+                                                        <img src="assets/img/cart/cart-image-min.png" alt="">
+                                                    </div>
+                                                    <div class="order__item">
+                                                        <img src="assets/img/cart/cart-image-min.png" alt="">
+                                                    </div>
+                                                    <div class="order__item">
+                                                        <img src="assets/img/cart/cart-image-min.png" alt="">
+                                                    </div>
+                                                    <div class="order__item">
+                                                        <img src="assets/img/cart/cart-image-min.png" alt="">
+                                                    </div>
+                                                    <div class="order__item">
+                                                        <img src="assets/img/cart/cart-image-min.png" alt="">
+                                                    </div>
+                                                </div>
+                
+                                                <div class="order__totals">
+                                                    <p class="order__totals-name">Итого</p>
+                                                    <p class="order__total-price">509 500₽</p>
+                                                </div>
+                
+                                                <div class="order__totals-mini">
+                                                    <p class="order__totals-positions">1 позиция на сумму 509 000₽</p>
+                                                    <p class="order__totals-delivery">Доставка на сумму 500₽</p>
+                                                </div>
+                
+                                            </div>
+                                        </div>
+                
+                                        <div class="order__step">
+                                            <div class="order__step-content">
+                                                <h4 class="order__step-title">Способы оплаты</h4>
+                
+                                                <button class="order__confirm">Подтвердить заказ</button>
+                
+                                                <p class="order__polytics">
+                                                    Подтверждая заказ, Вы соглашаетесь с условиями <a href="#" target="_blank">политики конфиденциальности</a> и <a href="#" target="_blank">правилами продажи</a>.
+                                                </p>
+                                            </div>
+                                        </div>
+                
+                                    </div>
+                                </div>
+
+                                <div class="order__right">
+                                    <div class="order-history">
+                                        <div class="order-history__wrapper">
+                                            <div class="order-history__step order-history__step_first">
+                                                <div class="order-history__num">
+                                                    <p>1</p>
+                                                </div>
+                                                <div class="order-history__divider"></div>
+                                            </div>
+                                            <div class="order-history__step order-history__step_second">
+                                                <div class="order-history__num">
+                                                    <p>2</p>
+                                                </div>
+                                                <div class="order-history__divider"></div>
+                                            </div>
+                                            <div class="order-history__step order-history__step_third">
+                                                <div class="order-history__num">
+                                                    <p>3</p>
+                                                </div>
+                                                <div class="order-history__divider"></div>
+                                            </div>
+                                            <div class="order-history__step order-history__step_fourth">
+                                                <div class="order-history__num">
+                                                    <p>4</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-        
-                                <div class="order__step">
-                                    <div class="order__step-content">
-                                        <h4 class="order__step-title">Адрес доставки</h4>
-        
-                                        <div class="order__address">
-                                            <textarea name="" id="" cols="30" rows="10" placeholder="Комментарий к доставке"></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-        
-                                <div class="order__step">
-                                    <div class="order__step-content">
-                                        <h4 class="order__step-title">Доставка</h4>
-        
-                                        <p class="order__items-counter">1 товар</p>
-                                        
-                                        <div class="order__items">
-                                            <div class="order__item">
-                                                <img src="assets/img/cart/cart-image-min.png" alt="">
-                                            </div>
-                                            <div class="order__item">
-                                                <img src="assets/img/cart/cart-image-min.png" alt="">
-                                            </div>
-                                            <div class="order__item">
-                                                <img src="assets/img/cart/cart-image-min.png" alt="">
-                                            </div>
-                                            <div class="order__item">
-                                                <img src="assets/img/cart/cart-image-min.png" alt="">
-                                            </div>
-                                            <div class="order__item">
-                                                <img src="assets/img/cart/cart-image-min.png" alt="">
-                                            </div>
-                                            <div class="order__item">
-                                                <img src="assets/img/cart/cart-image-min.png" alt="">
-                                            </div>
-                                        </div>
-        
-                                        <div class="order__totals">
-                                            <p class="order__totals-name">Итого</p>
-                                            <p class="order__total-price">509 500₽</p>
-                                        </div>
-        
-                                        <div class="order__totals-mini">
-                                            <p class="order__totals-positions">1 позиция на сумму 509 000₽</p>
-                                            <p class="order__totals-delivery">Доставка на сумму 500₽</p>
-                                        </div>
-        
-                                    </div>
-                                </div>
-        
-                                <div class="order__step">
-                                    <div class="order__step-content">
-                                        <h4 class="order__step-title">Способы оплаты</h4>
-        
-                                        <button class="order__confirm">Подтвердить заказ</button>
-        
-                                        <p class="order__polytics">
-                                            Подтверждая заказ, Вы соглашаетесь с условиями <a href="#" target="_blank">политики конфиденциальности</a> и <a href="#" target="_blank">правилами продажи</a>.
-                                        </p>
-                                    </div>
-                                </div>
-        
+                                
                             </div>
+
+
+
+                            
+
+
+
+                            
 
                         </div>
 
                         <div class="order__tabs-item">
 
-                            <div class="order__steps">
 
-                                <div class="order__step">
-                                    <div class="order__step-content">
-                                        <h4 class="order__step-title">Получатель1</h4>
-                                        <p class="order__step-subtitle">Данные нужны для курьера и сообщений об изменениях статуса вашего заказа</p>
+                            <div class="order__tabs-content">
+
+                                <div class="order__tabs-left">
+                                    <div class="order__steps">
+
+                                        <div class="order__step">
+                                            <div class="order__step-content">
+                                                <h4 class="order__step-title">Получатель1</h4>
+                                                <p class="order__step-subtitle">Данные нужны для курьера и сообщений об изменениях статуса вашего заказа</p>
+                
+                                                <div class="order__contact order__contact_jur">
+                                                    <input class="order__input" type="text" placeholder="ИНН организации">
         
-                                        <div class="order__contact order__contact_jur">
-                                            <input class="order__input" type="text" placeholder="ИНН организации">
+                                                    <input class="order__input" type="text" placeholder="Название организации">
+        
+        
+                                                    <input class="order__input" type="text" placeholder="Имя*">
+                                                    <input class="order__input" type="text" placeholder="Фамилия">
+                                                    <input class="order__input" type="text" placeholder="Телефон*">
+                                                    <input class="order__input" type="text" placeholder="Почта">
+        
+                                                    <textarea class="order__input" name="" id=""  placeholder="Юридический адрес"></textarea>
+                                                    <textarea class="order__input" name="" id=""  placeholder="Фактический адрес"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                        <div class="order__step">
+                                            <div class="order__step-content">
+                                                <h4 class="order__step-title">Адрес доставки</h4>
+                
+                                                <div class="order__address">
+                                                    <textarea name="" id="" cols="30" rows="10" placeholder="Комментарий к доставке"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                        <div class="order__step">
+                                            <div class="order__step-content">
+                                                <h4 class="order__step-title">Доставка</h4>
+                
+                                                <p class="order__items-counter">1 товар</p>
+                                                
+                                                <div class="order__items">
+                                                    <div class="order__item">
+                                                        <img src="assets/img/cart/cart-image-min.png" alt="">
+                                                    </div>
+                                                    <div class="order__item">
+                                                        <img src="assets/img/cart/cart-image-min.png" alt="">
+                                                    </div>
+                                                    <div class="order__item">
+                                                        <img src="assets/img/cart/cart-image-min.png" alt="">
+                                                    </div>
+                                                    <div class="order__item">
+                                                        <img src="assets/img/cart/cart-image-min.png" alt="">
+                                                    </div>
+                                                    <div class="order__item">
+                                                        <img src="assets/img/cart/cart-image-min.png" alt="">
+                                                    </div>
+                                                    <div class="order__item">
+                                                        <img src="assets/img/cart/cart-image-min.png" alt="">
+                                                    </div>
+                                                </div>
+                
+                                                <div class="order__totals">
+                                                    <p class="order__totals-name">Итого</p>
+                                                    <p class="order__total-price">509 500₽</p>
+                                                </div>
+                
+                                                <div class="order__totals-mini">
+                                                    <p class="order__totals-positions">1 позиция на сумму 509 000₽</p>
+                                                    <p class="order__totals-delivery">Доставка на сумму 500₽</p>
+                                                </div>
+                
+                                            </div>
+                                        </div>
+                
+                                        <div class="order__step">
+                                            <div class="order__step-content">
+                                                <h4 class="order__step-title">Способы оплаты</h4>
+                
+                                                <button class="order__confirm">Подтвердить заказ</button>
+                
+                                                <p class="order__polytics">
+                                                    Подтверждая заказ, Вы соглашаетесь с условиями <a href="#" target="_blank">политики конфиденциальности</a> и <a href="#" target="_blank">правилами продажи</a>.
+                                                </p>
+                                            </div>
+                                        </div>
+                
+                                    </div>
+                                </div>
 
-                                            <input class="order__input" type="text" placeholder="Название организации">
 
-
-                                            <input class="order__input" type="text" placeholder="Имя*">
-                                            <input class="order__input" type="text" placeholder="Фамилия">
-                                            <input class="order__input" type="text" placeholder="Телефон*">
-                                            <input class="order__input" type="text" placeholder="Почта">
-
-                                            <textarea class="order__input" name="" id=""  placeholder="Юридический адрес"></textarea>
-                                            <textarea class="order__input" name="" id=""  placeholder="Фактический адрес"></textarea>
+                                <div class="order__right">
+                                    <div class="order-history">
+                                        <div class="order-history__wrapper">
+                                            <div class="order-history__step order-history__step_first">
+                                                <div class="order-history__num">
+                                                    <p>1</p>
+                                                </div>
+                                                <div class="order-history__divider"></div>
+                                            </div>
+                                            <div class="order-history__step order-history__step_second">
+                                                <div class="order-history__num">
+                                                    <p>2</p>
+                                                </div>
+                                                <div class="order-history__divider"></div>
+                                            </div>
+                                            <div class="order-history__step order-history__step_third">
+                                                <div class="order-history__num">
+                                                    <p>3</p>
+                                                </div>
+                                                <div class="order-history__divider"></div>
+                                            </div>
+                                            <div class="order-history__step order-history__step_fourth">
+                                                <div class="order-history__num">
+                                                    <p>4</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-        
-                                <div class="order__step">
-                                    <div class="order__step-content">
-                                        <h4 class="order__step-title">Адрес доставки</h4>
-        
-                                        <div class="order__address">
-                                            <textarea name="" id="" cols="30" rows="10" placeholder="Комментарий к доставке"></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-        
-                                <div class="order__step">
-                                    <div class="order__step-content">
-                                        <h4 class="order__step-title">Доставка</h4>
-        
-                                        <p class="order__items-counter">1 товар</p>
-                                        
-                                        <div class="order__items">
-                                            <div class="order__item">
-                                                <img src="assets/img/cart/cart-image-min.png" alt="">
-                                            </div>
-                                            <div class="order__item">
-                                                <img src="assets/img/cart/cart-image-min.png" alt="">
-                                            </div>
-                                            <div class="order__item">
-                                                <img src="assets/img/cart/cart-image-min.png" alt="">
-                                            </div>
-                                            <div class="order__item">
-                                                <img src="assets/img/cart/cart-image-min.png" alt="">
-                                            </div>
-                                            <div class="order__item">
-                                                <img src="assets/img/cart/cart-image-min.png" alt="">
-                                            </div>
-                                            <div class="order__item">
-                                                <img src="assets/img/cart/cart-image-min.png" alt="">
-                                            </div>
-                                        </div>
-        
-                                        <div class="order__totals">
-                                            <p class="order__totals-name">Итого</p>
-                                            <p class="order__total-price">509 500₽</p>
-                                        </div>
-        
-                                        <div class="order__totals-mini">
-                                            <p class="order__totals-positions">1 позиция на сумму 509 000₽</p>
-                                            <p class="order__totals-delivery">Доставка на сумму 500₽</p>
-                                        </div>
-        
-                                    </div>
-                                </div>
-        
-                                <div class="order__step">
-                                    <div class="order__step-content">
-                                        <h4 class="order__step-title">Способы оплаты</h4>
-        
-                                        <button class="order__confirm">Подтвердить заказ</button>
-        
-                                        <p class="order__polytics">
-                                            Подтверждая заказ, Вы соглашаетесь с условиями <a href="#" target="_blank">политики конфиденциальности</a> и <a href="#" target="_blank">правилами продажи</a>.
-                                        </p>
-                                    </div>
-                                </div>
-        
                             </div>
+
+                            
 
                         </div>
 
 
                     </div>
+
+                    </div>
+
+                    
+
+
+
+
+
+                    
 
                     
                 </div>

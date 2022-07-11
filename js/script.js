@@ -8,6 +8,36 @@ $(document).ready(function(){
         nextArrow: $(document).find('.product-slider__arrow_top'),
         prevArrow: $(document).find('.product-slider__arrow_bottom'),
         asNavFor: '.product__image-slider',
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              'vertical': false
+            }
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              'vertical': false,
+              dots: true,
+              appendDots: $(document).find('.product-slider__dots')
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
     });
 
 
@@ -16,6 +46,9 @@ $(document).ready(function(){
         'arrows': false,
         fade: true,
         cssEase: 'linear',
+        swipe: false
+    }).on('setPosition', function (event, slick) {
+      slick.$slides.css('height', slick.$slideTrack.height() + 'px');
     });
   
 
@@ -61,6 +94,30 @@ $(document).ready(function(){
 
     $('.order__tabs-item').removeClass('order__tabs-item_active');
     $($(".order__tabs-item")[$(this).index()]).addClass('order__tabs-item_active');
+  });
+
+
+  $('.js-open-modal-order').on('click', function(){
+    if($('.header-mobile').hasClass('header-mobile_active')) {
+      $('.header-mobile').removeClass('header-mobile_active');
+    }
+    $('.overlays').addClass('overlays_active');
+    $('.modal_order').addClass('modal_order-active');
+  });
+ 
+  $('.modal__close').on('click', function(){
+    $('.overlays').removeClass('overlays_active');
+    $('.modal_order').removeClass('modal_order-active');
+  });
+
+  $('.js-open-modal-analysis').on('click', function(){
+    $('.overlays').addClass('overlays_active');
+    $('.modal_analysis').addClass('modal_analysis-active');
+  });
+ 
+  $('.modal__close').on('click', function(){
+    $('.overlays').removeClass('overlays_active');
+    $('.modal_analysis').removeClass('modal_analysis-active');
   });
 
 
