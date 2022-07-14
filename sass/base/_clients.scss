@@ -1,5 +1,16 @@
 .clients {
     padding: 40px 0;
+
+    @include for-tablet-landscape {
+        padding: 30px 0;
+    }
+    @include for-phone-portrait {
+        padding: 25px 0;
+    }
+    @include for-phone {
+        padding: 25px 0 15px;
+    }
+    
 }
 .clients__title {
     font-style: normal;
@@ -7,6 +18,19 @@
     font-size: 58px;
     line-height: 113.4%;
     color: #000000;
+
+    @include for-desk {
+        font-size: 40px;
+    }
+    @include for-tablet-landscape {
+        font-size: 35px;
+    }
+    @include for-phone-portrait {
+        font-size: 30px;
+    }
+    @include for-phone {
+        font-size: clamp(20px, 6.4vw, 30px);
+    }
 }
 .clients__wrapper {
     max-width: 1150px;
@@ -16,6 +40,20 @@
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 40px 0;
+
+    @include for-tablet-landscape {
+        margin-top: 40px;
+    }
+    @include for-tablet-portrait {
+        gap: 20px 0;
+    }
+    @include for-phone-portrait {
+        max-width: 520px;
+        margin-top: 25px;
+    }
+    @include for-phone {
+        max-width: 370px;
+    }
 
 }
 .clients__item {
@@ -28,9 +66,24 @@
     box-shadow: -15px 22px 62px -5px rgba(57, 87, 237, 0.1);
     border-radius: 30px;
 
+    @include for-tablet-portrait {
+        width: calc(100%/4 - 15px);
+        padding: 10px 25px;
+    }
+    @include for-phone-portrait {
+        width: calc(100%/2 - 15px);
+    }
+    @include for-phone {
+        width: calc(100%/2 - 10px);
+        height: auto;
+    }
+
     img {
         max-width: 100%;
         height: auto;
-        object-fit: cover;
+
+        @include for-phone {
+            max-height: 76px;
+        }
     }
 }

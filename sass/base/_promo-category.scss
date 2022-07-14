@@ -1,0 +1,61 @@
+.promo-category {
+    background: #f4f4f2;
+}
+.promo-category__bg {
+    position: relative;
+    padding: 176px 0 0;
+    height: 771px;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.promo-category__title {
+    max-width: 838px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 134.4%;
+    letter-spacing: 0.035em;
+    color: #000000;
+    margin-top: 10px;
+}
+.promo-category__title_sport {
+    max-width: 780px;
+}
+.promo-category__advantages {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 54px;
+    width: 875px;
+    height: 185px;
+    background: #FAF8F8;
+    box-shadow: 0px -43px 75px -5px rgba(57, 87, 237, 0.05);
+    border-radius: 10px 10px 0px 0px;
+
+    li {
+
+        img {
+            max-width: 100%;
+            height: auto;
+
+        }
+        p {
+            max-width: 239px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 134.4%;
+            color: #000000;
+            margin-top: 15px;
+        }
+    }
+}
+.promo-category__buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 470px;
+    margin-top: 40px;
+}

@@ -1,5 +1,15 @@
 .catagorys {
     padding: 40px 0;
+
+    @include for-tablet-landscape {
+        padding: 30px 0;
+    }
+    @include for-phone-portrait {
+        padding: 25px 0;
+    }
+    @include for-phone {
+        padding: 15px 0;
+    }
 }
 .categorys__title {
     font-style: normal;
@@ -7,23 +17,77 @@
     font-size: 58px;
     line-height: 113.4%;
     color: #000000;
+
+    @include for-desk {
+        font-size: 40px;
+    }
+    @include for-tablet-landscape {
+        font-size: 35px;
+    }
+    @include for-phone-portrait {
+        font-size: 30px;
+    }
+    @include for-phone {
+        font-size: clamp(20px, 6.4vw, 30px);
+    }
 }
 .categorys__wrapper {
     margin-top: 33px;
     display: flex;
     justify-content: space-between;
+
+    @include for-phone-portrait {
+        margin-top: 25px;
+    }
+    @include for-phone {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
 }
 .categorys__item {
     position: relative;
     width: calc(100%/3 - 10px);
     height: 600px;
-    border-radius: 10px;
+    // overflow: hidden;
+
+    @include for-desk {
+        height: 490px;
+    }
+    @include for-tablet-landscape {
+        height: 400px;
+    }
+    @include for-tablet-portrait {
+        height: 380px;
+    }
+    @include for-phone-portrait {
+        height: 300px;
+    }
+    @include for-phone {
+        width: 100%;
+        max-width: 370px;
+        height: 360px;
+    }
 }
 .categorys__item_top {
     img {
         max-width: 100%;
         height: auto;
         object-fit: cover;
+        border-radius: 10px;
+
+        @include for-tablet-landscape {
+            max-height: 400px;
+        }
+        @include for-tablet-portrait {
+            max-height: 380px;
+        }
+        @include for-phone-portrait {
+            max-height: 300px;
+        }
+        @include for-phone {
+            max-height: 360px;
+        }
     }
 }
 .categorys__item_bottom {
@@ -32,11 +96,26 @@
     left: 0;
     width: 100%;
     max-width: 480px;
+    height: 200px;
     padding: 30px 0 20px 30px;
-    background: radial-gradient(113.09% 176.9% at -9.94% -19.44%, rgba(204, 243, 255, 0.2) 0%, rgba(204, 234, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    background: radial-gradient(113.09% 176.9% at -9.94% -19.44%, rgba(204, 243, 255, 0.2) 0%, rgba(204, 234, 255, 0) 100%);
     background-blend-mode: overlay, normal;
     backdrop-filter: blur(40px);
     border-radius: 0px 0px 10px 10px;
+
+    @include for-tablet-landscape {
+        padding: 20px;
+    }
+    @include for-tablet-landscape {
+        height: 180px;
+    }
+    @include for-phone-portrait {
+        height: 160px;
+        padding: 10px 20px;
+    }
+    @include for-phone {
+        padding: 20px;
+    }
 
     h3 {
         max-width: 394px;
@@ -45,5 +124,21 @@
         font-size: 24px;
         line-height: 134.4%;
         color: #000000;
+
+        @include for-desk {
+            font-size: 20px;
+        }
+        @include for-tablet-landscape {
+            font-size: clamp(17px, 1.7vw, 20px);
+        }
+        @include for-tablet-portrait {
+            font-size: 17px;
+        }
+        @include for-phone-portrait {
+            font-size: clamp(13px, 2.1vw, 16px);
+        }
+        @include for-phone {
+            font-size: clamp(15px, 4.7vw, 18px);
+        }
     }
 }

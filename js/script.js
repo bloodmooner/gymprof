@@ -1,6 +1,27 @@
 
 $(document).ready(function(){
 
+  let menuIsOpen = false;
+  //Menu toggle
+  $('.header__burger-icon').on('click', function() {
+    $('.header-mobile').addClass('header-mobile_active');
+    menuIsOpen = true;
+  });
+  $('.header-mobile__close-image').on('click', function() {
+    $('.header-mobile').removeClass('header-mobile_active');
+    menuIsOpen = false;
+  });
+
+    //Scroll menu
+
+ $(window).scroll(function(){
+  var sticky = $('.header'),
+      scroll = $(window).scrollTop();
+
+  if (scroll > 0) sticky.addClass('fixed');
+  else sticky.removeClass('fixed');
+});
+
 
   $('.header__menu-list .header__menu-item:first-child a').on('click', function( e ){
     e.preventDefault();
@@ -18,7 +39,36 @@ $(document).ready(function(){
     $('.certificates__wrapper').slick({
         'slidesToShow': 4,
         'arrows': false,
-      });
+        responsive: [
+          {
+            breakpoint: 575,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              infinite: false,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 471,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: false,
+              dots: true
+            }
+          },
+        ]
+    });
+
+    $('.testimonials__wrapper-mobile').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: true,
+        arrows: false
+    });
+
 
     $('.product-slider__wrapper').slick({
         'vertical': true,

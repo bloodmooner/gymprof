@@ -6,6 +6,22 @@
     height: 771px;
     max-width: 1920px;
     margin: 0 auto;
+    background: url(../assets/img/index/index-bg-min.png) 30% 100%/cover no-repeat;
+
+    @include for-desk {
+        height: 570px;
+    }
+    @include for-tablet-landscape {
+        padding: 130px 0 0;
+    }
+    @include for-phone-portrait {
+        height: 460px;
+    }
+    @include for-phone { 
+        background: url(../assets/img/index/index-bg-min.png) 22% 100%/cover no-repeat; 
+        padding: 90px 0 0;
+        height: 300px;
+    }
 }
 .promo__block {
     width: 795px;
@@ -14,6 +30,16 @@
     backdrop-filter: blur(6px);
     border-radius: 10px;
     padding: 25px 30px 25px 15px;
+
+    @include for-desk {
+        width: 650px;
+    }
+    @include for-tablet-landscape {
+        max-width: 520px;
+    }
+    @include for-phone {
+        display: none;
+    }
 }
 .promo__label {
     font-style: normal;
@@ -21,6 +47,13 @@
     font-size: 24px;
     line-height: 134.4%;
     color: #000000;
+
+    @include for-desk {
+        font-size: 18px;
+    }
+    @include for-tablet-landscape {
+        font-size: 17px;
+    }
 }
 .promo__title {
     max-width: 750px;
@@ -30,10 +63,94 @@
     line-height: 134.4%;
     color: #000000;
     margin-top: 20px;
+
+    @include for-desk {
+        font-size: 30px;
+        max-width: 600px;
+    }
+    @include for-tablet-landscape {
+        max-width: 500px;
+        font-size: 25px;
+    }
 }
 .promo__buttons {
     display: flex;
     justify-content: space-between;
     width: 470px;
     margin-top: 40px;
+
+    @include for-desk {
+        width: 430px;
+    }
+    @include for-tablet-landscape {
+        width: 390px;
+    }
+    
+}
+
+.promo__mobile {
+    display: none;
+    margin-top: 20px;
+
+    @include for-phone {
+        display: block;
+    }
+}
+.promo__mobile_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.promo__mobile_block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #015EEA 0%, #00F2FE 100%);
+    border-radius: 10px;
+    padding: 15px 0;
+
+    h2 {
+        max-width: 200px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 134.4%;
+        color: #FFFFFF;
+    }
+
+}
+.promo__mobile_advantages {
+    li {
+        background: #FFFFFF;
+        box-shadow: -15px 22px 62px -5px rgba(57, 87, 237, 0.1);
+        border-radius: 10px;
+        margin: 0 auto;
+        margin-top: 10px;
+        padding: 0 20px;
+        max-width: 350px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        div {
+            max-width: 280px;
+            height: 84px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        img {
+
+        }
+        p {
+            max-width: 214px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 134.4%;
+            color: #000000;
+            padding-left: 10px;
+        }
+    }
 }
