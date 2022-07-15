@@ -9,7 +9,7 @@
   @media (max-width: 575px) { @content; }
 }
 @mixin for-phone-portrait {
-  @media (max-width: 767px) { @content; }
+  @media (max-width: 768px) { @content; }
 }
 @mixin for-tablet-portrait {
   @media (max-width: 991px) { @content; }

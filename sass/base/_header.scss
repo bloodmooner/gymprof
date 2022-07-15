@@ -5,24 +5,51 @@
     // background: #ffffff;
     width: 100%;
     
+    @include for-phone-portrait {
+        background: linear-gradient(90deg, #015EEA 0%, #00F2FE 100%);
+    }
+}
+.header.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(89.92deg, #65F0F4 0.06%, #6584F4 196.79%);
+    z-index: 500;
+
+    @include for-phone-portrait {
+        background: linear-gradient(90deg, #015EEA 0%, #00F2FE 100%);
+    }
 }
 .header__wrapper {
     position: relative;
     height: 100px;
     display: flex;
     justify-content: space-between;
+
+    @include for-phone-portrait {
+        align-items: center;
+        height: 90px;
+    }
+    
 }
 .header__menu {
     display: flex;
     align-items: center;
 
+    @include for-phone-portrait {
+        display: none;
+    }
 }
 .header__menu-list {
     display: flex;
     width: 330px;
     justify-content: space-between;
 
-
+    @include for-tablet-portrait {
+        width: 300px;
+    }
+    
 }
 .header__menu-item {
     position: relative;
@@ -90,15 +117,26 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+
+    @include for-tablet-landscape {
+        display: none;
+    }
 }
 .header__contacts {
     width: 474px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-.header__contacts_phone {
-    
+
+    @include for-tablet-landscape {
+        width: 380px;
+    }
+    @include for-tablet-portrait {
+        width: 210px;
+    }
+    @include for-phone-portrait {
+        display: none;
+    }
 }
 .header__contacts_phone {
     position: relative;
@@ -108,6 +146,11 @@
     font-size: 18px;
     line-height: 124.4%;
     color: #000000;
+
+    @include for-tablet-landscape {
+        font-size: 16px;
+    }
+    
 
     &:hover {
         text-decoration: none;
@@ -151,7 +194,46 @@
         color: #FFFFFF;
     }
 }
-.btn {
+.header__burger {
+    display: none;
+    @include for-phone-portrait {
+        display: block;
+    }
 }
-.btn_header {
+
+.header__logo-mobile {
+    display: none;
+    @include for-phone-portrait {
+        display: block;
+    }
+}
+.header__info-mobile {
+    display: none;
+
+    @include for-phone-portrait {
+        display: block;
+    }
+
+    p {
+        width: 124px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 134.4%;
+        color: #FFFFFF;
+        padding-top: 10px;
+    }
+}
+.header__cart-mobile {
+    display: none;
+    @include for-phone-portrait {
+        display: block;
+    }
+}
+.header__block-mobile {
+    display: none;
+    @include for-phone-portrait {
+        display: flex;
+        gap: 30px;
+    }   
 }
