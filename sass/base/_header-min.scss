@@ -2,6 +2,12 @@
     margin-top: 40px;
     &__wrapper {
         position: relative;
+        @include for-phone {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
     }
 
     &__logo {
@@ -23,6 +29,19 @@
             line-height: 135%;
             letter-spacing: 0.035em;
             color: #FFFFFF;
+        }
+        @include for-phone {
+            padding: 9px 15px;
+            margin-top: 30px;
+            position: relative;
+            top: initial;
+            left: initial;
+            transform: translate3d(0, 0, 0);
+            width: fit-content;
+            text-align: center;
+        }
+        @include for-phone-small {
+            padding: 9px 8px;
         }
     }
 

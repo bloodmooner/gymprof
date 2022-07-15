@@ -1,63 +1,116 @@
 .showcase {
     margin-top: 60px;
+    @include for-phone-portrait {
+        margin-top: 30px;
+    }
     &__wrapper {
         display: grid;
         grid-template-columns: repeat(3, 480px);
         grid-auto-rows: 600px;
         justify-content: space-between;
+        @include for-desk {
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 530px;
+            gap: 20px;
+        }
+        @include for-tablet-landscape {
+            grid-auto-rows: 45vw;
+        }
+        @include for-tablet-portrait {
+            grid-template-columns: 1fr;
+            grid-auto-rows: 500px;
+        }
+        @include for-phone-portrait {
+            grid-auto-rows: 350px;
+        }
     }
 
     &__item {
         display: block;
         position: relative;
         border-radius: 10px;
-    }
-
-    &__image {
-        position: absolute;
-        top: 0;
-        left: 0;
         width: 100%;
         height: 100%;
-        z-index: -1;
-        border-radius: 10px 10px 0 0;
-    }
-
-    &__bottom {
-        padding: 30px 30px 20px 30px;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        height: 190px;
-
-        border-radius: 0px 0px 10px 10px;
-        background-image: url('../../assets/img/blur.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        
-    }
-
-    &__title {
-        position: relative;
-        margin-bottom: 17px;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 135%;
-        color: #000000;
-        filter: blur(0px);
-        z-index: 1000;
     }
 
     &__link {
-        background-color: transparent;
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        
-        img {
-            
+        &:hover {
+            text-decoration: none;
+        } 
+    }
+
+    &__bottom {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        max-width: 480px;
+        padding: 30px 0 20px 30px;
+        background: radial-gradient(113.09% 176.9% at -9.94% -19.44%, rgba(204, 243, 255, 0.2) 0%, rgba(204, 234, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+        background-blend-mode: overlay, normal;
+        backdrop-filter: blur(40px);
+        border-radius: 0px 0px 10px 10px;
+        @include for-tablet-portrait {
+            max-width: 100%;
+        }
+        @include for-phone-portrait {
+            padding: 40px 20px 40px 20px;
         }
     }
+
+    &__title {
+        max-width: 394px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 134.4%;
+        color: #000000;
+        @include for-phone-portrait {
+            font-size: 18px;
+        }
+    }
+
+
+    &__btn {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FFFFFF;
+        width: 194px;
+        height: 50px;
+        border: 1px solid #000000;
+        border-radius: 10px;
+
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 134.4%;
+        color: #000000;
+        margin-top: 36px;
+
+        &:hover {
+            color: #000000;
+            text-decoration: none;
+        }
+        &_nt {
+            margin-top: 20px;
+            height: 16px;
+            justify-content: start;
+            border: none;
+        }
+        @include for-phone-portrait {
+            margin-top: 5px;
+        }
+    }
+
+
+    
+    
 }
+
+
+

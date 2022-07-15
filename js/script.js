@@ -20,17 +20,16 @@ $(document).ready(function(){
         'arrows': false,
       });
 
-    $('.product-slider__wrapper').slick({
-        'vertical': true,
-        'slidesToShow': 3,
-        'arrows': true,
-        nextArrow: $(document).find('.product-slider__arrow_bottom'),
-        prevArrow: $(document).find('.product-slider__arrow_top'),
-      });
+    
 
 
 
-    $('.product-slider__wrapper').slick({
+
+
+      // START PRODUCT SLIDERS
+
+      
+      $('.product-slider__wrapper').slick({
         'vertical': true,
         'slidesToShow': 3,
         'arrows': true,
@@ -55,13 +54,6 @@ $(document).ready(function(){
               dots: true,
               appendDots: $(document).find('.product-slider__dots')
             }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
           }
           // You can unslick at a given breakpoint now by adding:
           // settings: "unslick"
@@ -80,6 +72,38 @@ $(document).ready(function(){
       slick.$slides.css('height', slick.$slideTrack.height() + 'px');
     });
   
+
+
+    
+
+    let getSlideIndex = function(className) {
+      let productSliderItems = $('.product__image-slider .slick-slide').not('.slick-cloned');
+      let productSliderIndex = 0;
+
+      $(productSliderItems).each(function(i,elem) {
+        /* console.log($(this).find('.reel').closest('.slick-slide').attr('data-slick-index')); */
+
+        if($(this).find(className).closest('.slick-slide').attr('data-slick-index')) {
+          productSliderIndex = $(this).find(className).closest('.slick-slide').attr('data-slick-index');
+        }
+      });
+      return productSliderIndex;
+    };
+
+    $('.icon-360').click(function() {
+      var slider = $('.product-slider__wrapper');
+      slider[0].slick.slickGoTo(parseInt(getSlideIndex('.reel')));
+    }); 
+    
+    $('.icon-yt').click(function() {
+      var slider = $('.product-slider__wrapper');
+      slider[0].slick.slickGoTo(parseInt(getSlideIndex('.video__content')));
+    }); 
+
+
+
+    // END PRODUCT SLIDERS
+
 
 
     let videoPlayBtn = $('.video__play-btn');
@@ -148,7 +172,6 @@ $(document).ready(function(){
     $('.overlays').removeClass('overlays_active');
     $('.modal_analysis').removeClass('modal_analysis-active');
   });
-
 
 });
 

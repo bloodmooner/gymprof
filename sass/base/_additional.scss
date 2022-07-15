@@ -68,7 +68,7 @@
         line-height: 135%;
         color: #000000;
         @include for-phone-portrait {
-            height: 70px;
+            height: 100%;
         }
     }
 

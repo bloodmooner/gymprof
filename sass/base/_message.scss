@@ -1,9 +1,15 @@
 .message {
     margin-top: 80px;
+    @include for-phone-portrait {
+        margin-top: 15px;
+    }
     &__wrapper {
         max-width: 695px;
         width: 100%;
         margin: 0 auto;
+        @include for-phone {
+            max-width: 320px;
+        }
     }
 
     &__text {
@@ -18,6 +24,12 @@
             span {
                 background: -webkit-gradient(linear, left top, right top, from(#65F0F4), to(#3957ED));
                     background: linear-gradient(90deg, #65F0F4 0%, #3957ED 100%);
+            }
+            @include for-phone-portrait {
+                font-size: 20px;
+            }
+            @include for-phone {
+                font-size: 14px;
             }
         }
     }

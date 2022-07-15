@@ -1,10 +1,38 @@
-.order {
-    margin-top: 80px;
+.order-stages {
+    
+    margin: 0 auto;
+    width: fit-content;
     &__wrapper {
-        max-width: 943px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__stage {
+        p {
+
+        }
+        &_active {
+            p {
+
+            }
+        }
+    }
+
+    &__divider {
+        margin: 0 20px;
+    }
+}
+
+
+.order {
+    margin-top: 30px;
+    &__wrapper {
+        max-width: 690px;
+        margin: 0 auto;
     }
 
     &__title {
+        margin-top: 60px;
         margin-bottom: 25px;
         font-style: normal;
         font-weight: 700;
@@ -12,10 +40,30 @@
         line-height: 135%;
         letter-spacing: 0.035em;
         color: #000000;
+        text-align: center;
+    }
+
+    &__next {
+        display: block;
+        margin: 0 auto;
+        padding: 20px 40px;
+        background: linear-gradient(90deg, #015EEA 0%, #00F2FE 100%);
+        border-radius: 10px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 135%;
+        color: #FFFFFF;
+        @include for-phone-portrait {
+            padding: 15px 20px;
+        }
+        @include for-phone {
+            max-width: 100%;
+            width: 100%;
+        }
     }
 
     &__steps {
-        max-width: 730px;
         width: 100%;
     }
 
@@ -27,11 +75,14 @@
     }
 
     &__step-content {
-        padding: 30px 30px 60px 30px;
+        padding: 30px 74px 60px 74px;
+        @include for-phone-portrait {
+            padding: 20px 20px 40px 20px;
+        }
     }
 
     &__step-title {
-        margin-bottom: 30px;
+        margin-bottom: 5px;
         font-style: normal;
         font-weight: 700;
         font-size: 24px;
@@ -41,6 +92,7 @@
     }
 
     &__step-subtitle {
+        max-width: 310px;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -49,7 +101,7 @@
     }
 
     &__contact {
-        margin-top: 35px;
+        margin-top: 30px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: 80px;
@@ -237,9 +289,7 @@
     }
 
     &__tabs-content {
-        display: grid;
-        grid-template-columns: 750px 1fr;
-        gap: 150px;
+        display: flex;
     }
 }
 
@@ -247,21 +297,22 @@
 
 
 .tabs-controls {
-    margin-bottom: 40px;
+    width: fit-content;
+    margin: 0 auto 40px auto;
     display: grid;
     grid-template-columns: 176px 176px;
     grid-auto-rows: 45px;
     gap: 10px;
     &__item {
+        border: 1px solid #9B8C8C;
         box-shadow: -15px 22px 62px -5px rgba(57, 87, 237, 0.1);
         border-radius: 10px;
-        background: #CACACA;
         display: flex;
         justify-content: center;
         align-items: center;
         cursor: pointer;
         &_active {
-            background: #FFFFFF;
+            border: none;
             .tabs-controls__text {
                 color: #000000;
             }
