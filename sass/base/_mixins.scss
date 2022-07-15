@@ -29,6 +29,9 @@
 @mixin for-desk {
   @media (max-width: 1550px) { @content; }
 }
+@mixin for-desk-big {
+  @media (max-width: 1700px) { @content; }
+}
 
 
 
