@@ -8,7 +8,7 @@
         padding: 25px 0;
     }
     @include for-phone {
-        padding: 25px 0 0;
+        padding: 25px 0 15px;
     }
 }
 .catalog__title {
@@ -48,10 +48,7 @@
         margin-top: 12px;
     }
     @include for-phone-portrait {
-
-    }
-    @include for-phone {
-
+        font-size: 16px;
     }
 }
 .catalog__set {
@@ -63,6 +60,10 @@
     @include for-tablet-portrait {
         max-width: 428px;
     }
+    @include for-phone {
+       flex-direction: column;
+       gap: 10px; 
+    }
 
     li {
         display: flex;
@@ -72,6 +73,21 @@
         background: #FFFFFF;
         box-shadow: -15px 22px 62px -5px rgba(57, 87, 237, 0.1);
         border-radius: 10px;
+
+        &:first-child {
+            @include for-phone {
+                width: 191px;
+                height: 41px;
+                order: 1; 
+            }
+        }
+        &:last-child {
+            @include for-phone {
+                width: 237px;
+                height: 41px;
+                order: 0;
+            }
+        }
 
         p {
             max-width: 155px;
@@ -84,6 +100,9 @@
             @include for-tablet-portrait {
                 font-size: 13px;
             }
+            @include for-phone {
+                font-size: 14px; 
+             }
         }
     }
 }
@@ -107,7 +126,7 @@
         margin-top: 25px;
     }
     @include for-phone {
-
+        justify-content: center;
     }
 }
 .catalog__item {
@@ -122,6 +141,13 @@
     @include for-tablet-landscape {
         width: calc(100%/3 - 20px);
         height: auto;
+    }
+    @include for-phone-portrait {
+        width: calc(100%/2 - 10px);
+    }
+    @include for-phone {
+        width: 100%;
+        max-width: 355px;
     }
 }
 .catalog__item_top {
@@ -164,6 +190,12 @@
         @include for-tablet-portrait {
             font-size: 12px;
         }
+        @include for-phone-portrait {
+            font-size: 14px;
+        }
+        @include for-phone {
+            font-size: 18px;
+        }
     }
 }
 .catalog__item_bottom {
@@ -199,6 +231,9 @@
                 font-size: 13px;
                 margin-top: 8px;
             }
+            @include for-phone {
+                font-size: 14px;
+            }
     
             &:first-child {
                 margin-top: 0;
@@ -229,6 +264,12 @@
     @include for-tablet-portrait {
         font-size: 13px;
     }
+    @include for-phone-portrait {
+        font-size: 15px;
+    }
+    @include for-phone {
+        font-size: 16px;
+    }
 }
 .catalog__item_competitors {
     font-style: normal;
@@ -241,6 +282,9 @@
     @include for-desk {
         font-size: 11px;
     }
+    @include for-phone {
+        font-size: 12px;
+    }
 }
 .catalog__item_price {
     font-style: normal;
@@ -252,5 +296,8 @@
 
     @include for-tablet-portrait {
         font-size: 22px;
+    }
+    @include for-phone {
+        font-size: 24px;
     }
 }
