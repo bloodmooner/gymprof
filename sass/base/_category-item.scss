@@ -1,5 +1,15 @@
 .category-item {
     padding: 80px 0 40px;
+
+    @include for-tablet-landscape {
+        padding: 60px 0 30px;
+    }
+    @include for-phone-portrait {
+        padding: 50px 0 25px;
+    }
+    @include for-phone {
+        padding: 40px 0 15px;
+    }
 }
 .category-item__title {
     font-style: normal;
@@ -7,6 +17,19 @@
     font-size: 58px;
     line-height: 113.4%;
     color: #000000;
+
+    @include for-desk {
+        font-size: 40px;
+    }
+    @include for-tablet-landscape {
+        font-size: 35px;
+    }
+    @include for-phone-portrait {
+        font-size: 30px;
+    }
+    @include for-phone {
+        font-size: clamp(20px, 6.4vw, 30px);
+    }
 
     span {
         font-style: normal;
@@ -18,6 +41,34 @@
         -webkit-text-fill-color: transparent;
         background-clip: text;
         text-fill-color: transparent;
+
+        @include for-desk {
+            font-size: 40px;
+        }
+        @include for-tablet-landscape {
+            font-size: 35px;
+        }
+        @include for-phone-portrait {
+            font-size: 30px;
+        }
+        @include for-phone {
+            font-size: clamp(20px, 6.4vw, 30px);
+        }
+    }
+
+    .category-item__title-desk {
+        display: block;
+
+        @include for-phone {
+            display: none;
+        }
+    }
+    .category-item__title-mobile {
+        display: none;
+
+        @include for-phone {
+            display: block;
+        }
     }
 }
 .category-item__wrapper {
@@ -26,14 +77,53 @@
     width: 100%;
     height: 600px;
     border-radius: 10px;
+
+    @include for-desk {
+        height: 466px;
+    }
+    @include for-tablet-landscape {
+        margin-top: 40px;
+        height: 400px;
+    }
+    @include for-tablet-portrait {
+        height: 33vw;
+    }
+    @include for-phone-portrait {
+        margin-top: 25px;
+        height: auto;
+    }
 }
 .category-item__bg {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: auto;
     z-index: -1;
+
+    background:url(../assets/img/gym-carpet/about/about-bg-min.png) 60% center/cover no-repeat;
+    height: 100%;
+    border-radius: 10px;
+
+    @include for-tablet-landscape {
+        height: 400px;
+    }
+    @include for-tablet-portrait {
+        height: 33vw;
+    }
+    @include for-phone-portrait {
+        position: static;
+        height: 35vw;
+    }
+    @include for-phone {
+        height: 400px;
+    }
+}
+.category-item__bg--sport {
+    background:url(../assets/img/sport-carpet/carpet-sport-bg.png) 70% center/cover no-repeat;
+
+    @include for-phone {
+        background-position: 75% 100%;
+    }
 }
 .category-item__list {
     height: 100%;
@@ -43,10 +133,58 @@
     justify-content: space-between;
     padding: 75px 68px 56px 30px;
 
+    @include for-desk {
+        padding: 50px;
+        max-width: 490px;
+    }
+    @include for-tablet-landscape {
+        padding: 30px;
+        max-width: 400px;
+    }
+    @include for-tablet-portrait {
+        padding: 20px;
+        max-width: 37vw;
+        min-width: 300px;
+    }
+    @include for-phone-portrait {
+        max-width: 100%;
+        min-width: 100px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: start;
+        gap: 20px;
+        padding: 0;
+        margin-top: 20px;
+    }
+
     li {
         position: relative;
         display: flex;
         gap: 60px;
+
+        @include for-desk {
+            gap: 50px;
+        }
+        @include for-tablet-landscape {
+            gap: 30px;
+        }
+        @include for-tablet-portrait {
+            gap: 20px;
+        }
+        @include for-phone-portrait {
+            flex-direction: column;
+            justify-content: center;
+            width: calc(100%/2 - 10px);
+            height: 209px;
+            padding: 25px 20px;
+            background: #FFFFFF;
+            box-shadow: -15px 22px 62px -5px rgba(57, 87, 237, 0.1);
+            border-radius: 10px;
+        }
+        @include for-phone {
+            width: 100%;
+            height: 209px;
+        }
 
         img {
             max-width: 100%;
@@ -61,7 +199,21 @@
                 font-weight: 700;
                 font-size: 20px;
                 line-height: 134.4%;
-                color: #000000;                
+                color: #000000; 
+                
+                @include for-tablet-landscape {
+                    font-size: 17px;
+                    max-width: 280px;
+                }
+                @include for-tablet-portrait {
+                    font-size: clamp(13px, 1.6vw, 15px);
+                }
+                @include for-phone-portrait {
+                    font-size: clamp(14px, 2.2vw, 16px);
+                }
+                @include for-phone {
+                    font-size: 16px;
+                }
             }
 
             h4 {
@@ -72,24 +224,142 @@
                 line-height: 134.4%;
                 color: #000000;
                 margin-top: 15px;
+
+                @include for-tablet-landscape {
+                    font-size: 13px;
+                    margin-top: 10px;
+                    max-width: 280px;
+                }
+                @include for-tablet-portrait {
+                    font-size: 11px;
+                    margin-top: 5px;
+                }
+                @include for-phone-portrait {
+                    font-size: clamp(12px, 2vw,14px);
+                }
+                @include for-phone {
+                    font-size: 14px;
+                }
             }
         }
         .category-item__arrow1 {
             position: absolute;
             top: -10px;
             right: -195px;
+
+            @include for-desk {
+                width: 100px;
+                right: -100px;
+            }
+            @include for-tablet-landscape {
+                width: 70px;
+                right: -23%;
+            }
+            @include for-tablet-portrait {
+                width: 60px;
+            }
+            @include for-phone-portrait {
+                display: none;
+            }
+            
         }
         .category-item__arrow2 {
             position: absolute;
             top: -30px;
             right: -195px;
             transform: rotate(-15deg);
+
+            @include for-desk {
+                width: 100px;
+                right: -100px;
+            }
+            @include for-tablet-landscape {
+                width: 70px;
+                top: -10px;
+                right: calc(-23% + 15px);
+            }
+            @include for-tablet-portrait {
+                width: 60px;
+                right: calc(-23% + 10px);
+            }
+            @include for-phone-portrait {
+                display: none;
+            }
         }
         .category-item__arrow3 {
             position: absolute;
             top: -60px;
             right: -195px;
             transform: rotate(-30deg);
+
+            @include for-desk {
+                width: 100px;
+                top: -35px;
+                right: -100px;
+            }
+            @include for-tablet-landscape {
+                width: 70px;
+                right: -23%;
+            }
+            @include for-tablet-portrait {
+                width: 60px;
+                top: -20px;
+            }
+            @include for-phone-portrait {
+                display: none;
+            }
         }
+    }
+}
+.category-item__block_mobile {
+    display: none;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: -15px 22px 62px -5px rgba(57, 87, 237, 0.1);
+
+    @include for-phone-portrait {
+        display: flex;
+    }
+}
+.category-item__block_mobile1 {
+    top: 10%;
+    right: 43%;
+
+    @include for-phone {
+        top: 10%;
+        right: 58%;
+    }
+}
+.category-item__block_mobile2 {
+    top: 15%;
+    right: 10%;
+
+    @include for-phone {
+        top: 18%;
+        right: 10%;
+    }
+}
+.category-item__block_mobile3 {
+    top: 20%;
+    right: 28%;
+
+    @include for-phone {
+        top: 25%;
+        right: 40%;
+    }
+}
+.category-item__img {
+    display: none;
+
+    @include for-phone-portrait {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
     }
 }

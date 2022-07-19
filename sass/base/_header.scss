@@ -4,6 +4,7 @@
     left: 0;
     // background: #ffffff;
     width: 100%;
+    z-index: 5;
     
     @include for-phone-portrait {
         background: linear-gradient(90deg, #015EEA 0%, #00F2FE 100%);
@@ -29,7 +30,7 @@
 
     @include for-phone-portrait {
         align-items: center;
-        height: 90px;
+        height: 91px;
     }
     
 }

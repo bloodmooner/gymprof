@@ -1,5 +1,18 @@
 .promo-category {
     background: #f4f4f2;
+    position: relative;
+
+    @include for-phone-portrait {
+        padding-top: 85px;
+    }
+    @include for-phone {
+        background: #faf8f8;
+    }
+}
+.promo-category .breadcrumb {
+    @include for-phone {
+        display: none;
+    }
 }
 .promo-category__bg {
     position: relative;
@@ -7,6 +20,34 @@
     height: 771px;
     max-width: 1920px;
     margin: 0 auto;
+    background: url(../assets/img/gym-carpet/gym-carpet-bg-min.png) 85% 100%/cover no-repeat;
+
+    @include for-desk {
+        height: 700px;
+        background-position: 60% 100%;
+        padding-top: 160px;
+    }
+    @include for-tablet-landscape {
+        height: 650px;
+    }
+    @include for-phone-portrait {
+        height: 370px;
+        padding-top: 80px;
+    }
+    @include for-phone {
+        background: url(../assets/img/gym-carpet/gym-carpet-bg-mobile.png) center center/cover no-repeat; 
+        height: 300px;
+    }
+}
+.promo-category__bg--sport {
+    background: url(../assets/img/sport-carpet/sport-carpet-bg-min.png) 80% 100%/cover no-repeat;
+
+    @include for-tablet-portrait {
+        background-position: 64% 100%; 
+    }
+    @include for-phone {
+        background: url(../assets/img/sport-carpet/carpet-sport-mobile.png) center center/cover no-repeat; 
+    }
 }
 .promo-category__title {
     max-width: 838px;
@@ -17,9 +58,38 @@
     letter-spacing: 0.035em;
     color: #000000;
     margin-top: 10px;
+
+    @include for-desk-big {
+        font-size: 50px;
+    }
+    @include for-desk {
+        font-size: 45px;
+        max-width: 755px;
+    }
+    @include for-tablet-landscape {
+        font-size: 40px;
+        max-width: 600px;
+    }
+    @include for-tablet-portrait {
+        font-size: 35px;
+        max-width: 520px;
+    }
+    @include for-phone-portrait {
+        font-size: 28px;
+    }
+    @include for-phone {
+        display: none;
+    }
 }
 .promo-category__title_sport {
     max-width: 780px;
+
+    @include for-tablet-landscape {
+        max-width: 595px;
+    }
+    @include for-tablet-portrait {
+        max-width: 520px;
+    }
 }
 .promo-category__advantages {
     position: absolute;
@@ -35,12 +105,36 @@
     box-shadow: 0px -43px 75px -5px rgba(57, 87, 237, 0.05);
     border-radius: 10px 10px 0px 0px;
 
+    @include for-desk {
+        width: 855px;
+        height: 175px;
+        padding: 25px 45px;
+    }
+    @include for-tablet-landscape {
+        right: 50%;
+        transform: translateX(50%);
+    }
+    @include for-tablet-portrait {
+        width: 720px;
+        height: auto;
+        padding: 20px;
+    }
+    @include for-phone-portrait {
+        display: none;
+    }
+
     li {
 
         img {
             max-width: 100%;
             height: auto;
 
+            @include for-desk {
+                max-width: 44px;
+            }
+            @include for-tablet-portrait {
+                max-width: 35px;
+            }
         }
         p {
             max-width: 239px;
@@ -50,7 +144,110 @@
             line-height: 134.4%;
             color: #000000;
             margin-top: 15px;
+
+            @include for-desk {
+                max-width: 225px;
+                font-size: 15px;
+            }
+            @include for-tablet-portrait {
+                max-width: 200px;
+                font-size: 13px;
+            }
         }
+    }
+}
+.promo-category__mobile_wrapper {
+    display: none;
+
+    @include for-phone-portrait {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 0 30px;
+    }
+    @include for-phone {
+        padding: 30px 0;
+    }
+}
+.promo-category__mobile_block {
+    display: none;
+
+    @include for-phone {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(90deg, #015EEA 0%, #00F2FE 100%);
+        border-radius: 10px;
+        padding: 15px 0;
+    }
+
+    h2 {
+        max-width: 253px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 134.4%;
+        color: #FFFFFF;
+    }
+}
+.promo-category__advantages_mobile {
+    display: none;
+
+    @include for-phone-portrait {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;           
+    }
+    @include for-phone {
+        gap: 10px;         
+    }
+
+    li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        padding: 0 20px;
+        width: calc(100%/2 - 10px);
+        height: 84px;
+        background: #FFFFFF;
+        box-shadow: -15px 22px 62px -5px rgba(57, 87, 237, 0.1);
+        border-radius: 10px;
+
+        @include for-phone {
+            width: 100%;
+        }
+
+        img {
+            max-width: 40px;
+            height: auto;
+
+            @include for-phone {
+                max-width: 47px;
+                width: 100%;
+            }
+        }
+        p {
+            width: 100%;
+            font-style: normal;
+            font-weight: 700;
+            font-size: clamp(12px, 2vw, 15px);
+            line-height: 134.4%;
+            color: #000000;
+
+            @include for-phone {
+                font-size: clamp(13px, 4vw, 16px);
+                width: 215px;
+            }
+        }
+    }
+    
+}
+.promo-category__mobile_btn-wrapper {
+    display: none;
+
+    @include for-phone {
+        display: block;
     }
 }
 .promo-category__buttons {
@@ -58,4 +255,17 @@
     justify-content: space-between;
     width: 470px;
     margin-top: 40px;
+
+    @include for-desk {
+        width: 430px;
+    }
+    @include for-tablet-landscape {
+        width: 390px;
+    }
+    @include for-phone-portrait {
+        margin-top: 65px;
+    }
+    @include for-phone {
+        display: none;
+    }
 }

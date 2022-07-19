@@ -58,7 +58,8 @@
     }
 }
 .btn_promo-mobile {
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
     height: 56px;
     background: linear-gradient(90deg, #015EEA 0%, #00F2FE 100%);
     border-radius: 10px;
@@ -72,6 +73,13 @@
     align-items: center;
     text-align: center;
     color: #FFFFFF;
+}
+.btn_promo-category_mobile {
+    display: none;
+
+    @include for-phone {
+        display: block;
+    }
 }
 .btn_promo_catalog {
     position: relative;
@@ -106,6 +114,47 @@
     content: "";
     position: absolute;
     bottom: 14px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, #000000 0%, #000000 100%);
+}
+.btn_promo_catalog-mobile {
+    display: none;
+
+    @include for-phone {
+        display: block;
+        margin: 0 auto;
+        margin-top: 15px;
+        position: relative;
+        width: 151px;
+        font-size: 16px;
+        color: #000000;
+        transition: all 0.3s;
+        background: linear-gradient(90deg, #000000 0%, #000000 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+
+        &:hover {
+            text-decoration: none;
+            background: linear-gradient(90deg, #015EEA 0%, #00F2FE 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+
+            &::after {
+                background: linear-gradient(90deg, #015EEA 0%, #00F2FE 100%);
+            }
+        }
+    }
+}
+.btn_promo_catalog-mobile::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
     left: 0;
     width: 100%;
     height: 1px;

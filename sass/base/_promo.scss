@@ -1,5 +1,10 @@
 .promo {
     background: #ffffff;
+    position: relative;
+
+    @include for-phone-portrait {
+        padding-top: 85px;
+    }
 }
 .promo__bg {
     padding: 151px 0 0;
@@ -15,12 +20,13 @@
         padding: 130px 0 0;
     }
     @include for-phone-portrait {
-        height: 460px;
+        height: 400px;
+        padding: 45px 0 0;
     }
     @include for-phone { 
-        background: url(../assets/img/index/index-bg-min.png) 22% 100%/cover no-repeat; 
+        background: url(../assets/img/index/index-mob.png) 50% 100%/cover no-repeat; 
         padding: 90px 0 0;
-        height: 300px;
+        height: 355px;
     }
 }
 .promo__block {

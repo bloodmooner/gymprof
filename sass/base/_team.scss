@@ -1,5 +1,15 @@
 .team {
     padding: 40px 0;
+
+    @include for-tablet-landscape {
+        padding: 30px 0;
+    }
+    @include for-phone-portrait {
+        padding: 25px 0;
+    }
+    @include for-phone {
+        padding: 25px 0 15px;
+    }
 }
 .team__title {
     font-style: normal;
@@ -7,27 +17,74 @@
     font-size: 58px;
     line-height: 113.4%;
     color: #000000;
+
+    @include for-desk {
+        font-size: 40px;
+    }
+    @include for-tablet-landscape {
+        font-size: 35px;
+    }
+    @include for-phone-portrait {
+        font-size: 30px;
+    }
+    @include for-phone {
+        font-size: clamp(20px, 6.4vw, 30px);
+    }
 }
 .team__wrapper {
     margin-top: 60px;
     max-width: 1105px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+
+    @include for-desk {
+        max-width: 935px;
+    }
+    @include for-tablet-landscape {
+        margin-top: 40px;
+        max-width: 835px;
+    }
+    @include for-tablet-portrait {
+        max-width: 730px;
+    }
+    @include for-phone-portrait {
+        margin-top: 25px;
+    }
+    @include for-phone {
+        justify-content: center;
+        gap: 20px;
+    }
 
     li {
         width: calc(100%/3 - 10px);
-        border-radius: 30px 30px 0px 0px;
+        max-width: 355px;        
+        height: 100%;
         box-shadow: -15px 22px 62px -5px rgba(57, 87, 237, 0.1);
+
+        @include for-phone {
+            width: 100%;
+        }
 
         img {
             max-width: 100%;
             height: auto;
+            border-radius: 30px 30px 0px 0px;
         }
 
         div {
             max-width: 355px;
             background: #FFFFFF;
-            padding: 20px 0 30px 15px;
+            padding: 20px 15px 30px 15px;   
+
+            @include for-phone-portrait {
+                height: 18vw;
+                max-height: 110px;
+            }
+            @include for-phone {
+                height: 100%;
+                max-height: 110px;
+            }
 
             h3 {
                 font-style: normal;
@@ -35,6 +92,19 @@
                 font-size: 24px;
                 line-height: 134.4%;
                 color: #000000;
+
+                @include for-tablet-landscape {
+                    font-size: 20px;
+                }
+                @include for-tablet-portrait {
+                    font-size: 19px;
+                }
+                @include for-phone-portrait {
+                    font-size: clamp(15px, 2.4vw, 18px);
+                }
+                @include for-phone {
+                    font-size: 20px;
+                }
             }
 
             p {
@@ -44,6 +114,21 @@
                 line-height: 134.4%;
                 color: #000000;
                 margin-top: 20px;
+
+                @include for-tablet-landscape {
+                    margin-top: 15px;
+                }
+                @include for-tablet-portrait {
+                    font-size: 15px;
+                }
+                @include for-phone-portrait {
+                    font-size: clamp(12px, 2vw, 14px);
+                    margin-top: 5px;
+                }
+                @include for-phone {
+                    font-size: 16px;
+                    margin-top: 15px;
+                }
             }
         }
     }

@@ -180,9 +180,11 @@
         }
         @include for-tablet-portrait {
             font-size: 16px;
+            
         }
         @include for-phone-portrait {
             font-size: 20px;
+            font-weight: 700;
 
             background: linear-gradient(90deg, #015EEA 0%, #00F2FE 100%);
             -webkit-background-clip: text;
@@ -239,6 +241,7 @@
         }
         @include for-phone-portrait {
             font-size: 20px;
+            font-weight: 700;
         }
 
         &::after {
