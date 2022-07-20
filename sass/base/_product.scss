@@ -59,7 +59,9 @@
     }
 
     &__slider {
+        margin-top: 8px;
         @include for-tablet-landscape {
+            margin-top: initial;
             grid-column: 1/2;
             grid-row: 2/3;
         }
@@ -171,7 +173,7 @@
     }
 
     &__prices {
-        margin-top: 25px;
+        margin-top: 22px;
         display: flex;
         align-items: flex-end;
         @include for-phone-portrait {
@@ -194,7 +196,7 @@
     }
 
     &__old {
-        margin-left: 10px;
+        margin-left: 16px;
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
@@ -205,7 +207,7 @@
 
 
     &__credit {
-        margin-top: 16px;
+        margin-top: 15px;
         @include for-phone-portrait {
             margin-top: 10px;
         }
@@ -230,7 +232,7 @@
     }
 
     &__credit-price {
-        padding: 5px 2px;
+        padding: 2px 2px;
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
@@ -259,7 +261,7 @@
     }
 
     &__buttons {
-        margin-top: 30px;
+        margin-top: 28px;
         display: flex;
         align-items: center;
     }
@@ -330,7 +332,7 @@
     &__description-link {
         position: relative;
         display: inline-block;
-        margin-top: 5px;
+        margin-top: 10px;
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
@@ -381,18 +383,18 @@
     }
 
     &__aside-content {
-        padding: 30px 30px 40px 30px;
+        padding: 27px 30px 37px 30px;
         @include for-phone-portrait {
             padding: 20px 20px 30px 20px;
         }
     }
 
     &__aside-list {
-        margin-bottom: 10px;
+        margin-bottom: 6px;
     }
 
     &__aside-item {
-        margin-bottom: 3px;
+        margin-bottom: 0px;
         display: flex;
         align-items: center;
     }
@@ -499,7 +501,8 @@
     }
 
     .slick-slide {
-        height: 200px;
+        /* height: 200px; */
+        height: 197px;
         margin: 5px 0;
         div {
             height: 100%;

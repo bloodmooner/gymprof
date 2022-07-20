@@ -190,6 +190,8 @@ $(document).ready(function(){
 
 
 
+  // Order Tabs
+
   $('.tabs-controls__item').click(function(){
     $('.tabs-controls__item').removeClass('tabs-controls__item_active');
     $(this).addClass('tabs-controls__item_active');
@@ -197,6 +199,18 @@ $(document).ready(function(){
 
     $('.order__tabs-item').removeClass('order__tabs-item_active');
     $($(".order__tabs-item")[$(this).index()]).addClass('order__tabs-item_active');
+  });
+
+
+  // Pay Method Tabs
+
+  $('.order__pay-tab').click(function(){
+    $('.order__pay-tab').removeClass('order__pay-tab_active');
+    $(this).addClass('order__pay-tab_active');
+
+
+    $('.order__pay-item').removeClass('order__pay-item_active');
+    $($(".order__pay-item")[$(this).index()]).addClass('order__pay-item_active');
   });
 
 

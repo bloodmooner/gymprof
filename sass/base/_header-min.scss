@@ -11,6 +11,9 @@
     }
 
     &__logo {
+        @include for-phone {
+            display: none;
+        }
     }
 
     &__badge {
@@ -29,6 +32,10 @@
             line-height: 135%;
             letter-spacing: 0.035em;
             color: #FFFFFF;
+            width: 280px;
+            @include for-phone {
+                width: auto;
+            }
         }
         @include for-phone {
             padding: 9px 15px;

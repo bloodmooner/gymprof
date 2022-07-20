@@ -5,6 +5,7 @@
     &__wrapper {
         display: flex;
         align-items: center;
+        
     }
 
     &__stage {
@@ -20,6 +21,15 @@
 
     &__divider {
         margin: 0 20px;
+        img {
+            @include for-phone {
+                width: 100%;
+            }
+        }
+        @include for-phone {
+            margin: 0 10px;
+            width: 61px;
+        }
     }
 }
 
@@ -27,12 +37,39 @@
 .order {
     margin-top: 30px;
     &__wrapper {
-        max-width: 690px;
+        max-width: 730px;
         margin: 0 auto;
     }
 
+    &__grid-elem {
+        @include for-phone {
+            display: grid;
+        }
+    }
+
+    &__grid-item {
+        &:nth-child(1) {
+            @include for-phone {
+                grid-column: 1/2;
+                grid-row: 3/4;
+            }
+        }
+        &:nth-child(2) {
+            @include for-phone {
+                grid-column: 1/2;
+                grid-row: 1/2;
+            }
+        }
+        &:nth-child(3) {
+            @include for-phone {
+                grid-column: 1/2;
+                grid-row: 2/3;
+            }
+        }
+    }
+
     &__title {
-        margin-top: 60px;
+        margin-top: 19px;
         margin-bottom: 25px;
         font-style: normal;
         font-weight: 700;
@@ -41,6 +78,17 @@
         letter-spacing: 0.035em;
         color: #000000;
         text-align: center;
+        @include for-phone {
+            margin-top: 46px;
+            margin-bottom: 16px;
+            font-size: 20px;
+        }
+    }
+
+    &__left {
+        @include for-phone {
+            margin-top: 38px;
+        }
     }
 
     &__next {
@@ -75,7 +123,7 @@
     }
 
     &__step-content {
-        padding: 30px 74px 60px 74px;
+        padding: 30px 30px 56px 30px;
         @include for-phone-portrait {
             padding: 20px 20px 40px 20px;
         }
@@ -89,24 +137,35 @@
         line-height: 135%;
         letter-spacing: 0.035em;
         color: #000000;
+        @include for-phone {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
     }
 
     &__step-subtitle {
-        max-width: 310px;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
         line-height: 135%;
         color: #CD5B5B;
+        @include for-phone {
+            font-size: 12px;
+        }
     }
 
     &__contact {
         margin-top: 30px;
+        max-width: 542px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: 80px;
         gap: 22px;
-        
+        @include for-phone {
+            margin-top: 20px;
+            grid-auto-rows: 55px;
+            gap: 10px;
+        }
         &_jur {
             .order__input {
                 &:nth-child(1) {
@@ -155,6 +214,10 @@
         font-size: 16px;
         line-height: 135%;
         color: #9D9797;
+        @include for-phone {
+            padding-left: 21px;
+            font-size: 14px;
+        }
 
         &:nth-child(1) {
             grid-column: 1/2;
@@ -261,6 +324,16 @@
         font-size: 16px;
         line-height: 135%;
         color: #FFFFFF;
+        @include for-phone {
+            width: 100%;
+            padding: 15px 20px;
+        }
+    }
+
+    &__bottom {
+        @include for-phone {
+            padding: 0 13px;
+        }
     }
 
     &__polytics {
@@ -279,6 +352,9 @@
             background-clip: text;
             text-fill-color: transparent;
         }
+        @include for-phone {
+            font-size: 12px;
+        }
     }
 
     &__tabs-item {
@@ -289,7 +365,7 @@
     }
 
     &__tabs-content {
-        display: flex;
+        /* display: flex; */
     }
 }
 
@@ -303,6 +379,11 @@
     grid-template-columns: 176px 176px;
     grid-auto-rows: 45px;
     gap: 10px;
+    @include for-phone {
+        margin: 0 auto 24px auto;
+        grid-template-columns: repeat(2, 135px);
+        grid-auto-rows: 35px;
+    }
     &__item {
         border: 1px solid #9B8C8C;
         box-shadow: -15px 22px 62px -5px rgba(57, 87, 237, 0.1);
@@ -326,6 +407,9 @@
         line-height: 135%;
         letter-spacing: 0.035em;
         color: #9B8C8C;
+        @include for-phone {
+            font-size: 16px;
+        }
     }
 }
 
@@ -372,4 +456,232 @@
 
     &__divider {
     }
+}
+
+
+
+
+
+
+.order {
+
+    &__pay {
+        margin-top: 27px;
+        margin-bottom: 37px;
+        @include for-phone {
+            margin-top: 20px;
+        }
+    }
+
+    &__pay-tabs {
+        display: grid;
+        grid-template-columns: repeat(2, 165px);
+        grid-auto-rows: 62px;
+        gap: 20px;
+        @include for-phone {
+            grid-template-columns: repeat(2, 140px);
+            grid-auto-rows: 53px;
+            gap: 5px;
+        }
+        @include for-phone-small {
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: 70px;
+        }
+    }
+
+    &__pay-tab {
+        padding: 8px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #BCB4B4;
+        border-radius: 4px;
+        cursor: pointer;
+        &_active {
+            border: 2px solid #000000;
+            @include for-phone {
+                border: 1px solid #000000;
+            }
+        }
+        &_card {
+            align-items: flex-start;
+        }
+        @include for-phone {
+            padding: 8px 10px;
+        }
+    }
+
+    &__pay-name {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 135%;
+        color: #000000;
+        @include for-phone {
+            font-size: 12px;
+        }
+    }
+
+    &__pay-icon {
+        margin-top: 5px;
+    }
+
+    &__pay-container {
+        margin-top: 41px;
+    }
+
+    &__pay-item {
+        display: none;
+        
+    }
+
+    &__pay-methods {
+    }
+
+    &__pay-method {
+        display: flex;
+        align-items: center;
+    }
+
+    &__pay-text {
+        display: flex;
+        align-items: center;
+        margin-left: 28px;
+        @include for-phone {
+            margin-left: 0;
+        }
+    }
+
+    &__pay-bankname {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 135%;
+        color: #000000;
+        @include for-phone {
+            display: none;
+        }
+    }
+
+    &__pay-bankicon {
+        margin-left: 30px;
+    }
+
+    &__pay-question {
+        margin-left: 10px;
+        cursor: pointer;
+        @include for-phone {
+            width: 16px;
+            height: 16px;
+        }
+    }
+}
+
+.order__pay-item {
+    display: none;
+    &_active {
+        display: block;
+    }
+}
+
+
+
+.order {
+
+    &__adress-form {
+        margin-top: 38px;
+        display: flex;
+        flex-direction: column;
+        @include for-phone {
+            margin-top: 20px;
+        }
+    }
+
+    &__adress-row {
+        position: relative;
+        margin-bottom: 20px;
+        width: 100%;
+        @include for-phone {
+            margin-bottom: 10px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &:nth-child(1) {
+            max-width: 622px;
+            .order__adress-input {
+                
+                padding: 15px 100px 23px 20px;
+                @include for-phone {
+                    height: 70px;
+                }
+            }
+        }
+        &:nth-child(2) {
+            max-width: 220px;
+        }
+        &:nth-child(3) {
+            max-width: 482px;
+        }
+    }
+
+    &__adress-input {
+        padding: 16px 18px 24px 18px;
+        width: 100%;
+        border: 1px solid #000000;
+        border-radius: 4px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 135%;
+        color: #000000;
+        @include for-phone {
+            padding: 20px 20px 20px 20px;
+            font-size: 12px;
+        }
+        &::placeholder {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 135%;
+            color: #000000;
+            @include for-phone {
+                font-size: 12px;
+            }
+        }
+    }
+
+    &__adress-instruments {
+        position: absolute;
+        right: 13px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__adress-search {
+        cursor: pointer;
+    }
+
+    &__adress-clear {
+        margin-left: 5px;
+        cursor: pointer;
+        @include for-phone {
+            margin-left: 13px;
+        }
+    }
+
+    &__adress-textarea {
+        width: 100%;
+        min-height: 127px;
+        padding: 16px 18px 24px 18px;
+        border: 1px solid #000000;
+        border-radius: 4px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 135%;
+        color: #9D9797;
+    }
+
 }
