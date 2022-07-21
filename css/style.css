@@ -1048,6 +1048,80 @@ template {
   }
 }
 
+.politica {
+  position: relative;
+  padding: 140px 0 40px;
+}
+
+@media (max-width: 1550px) {
+  .politica {
+    padding-top: 120px;
+  }
+}
+
+@media (max-width: 575px) {
+  .politica {
+    padding: 120px 0 35px;
+  }
+}
+
+.politica p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 134.4%;
+  color: #000000;
+  margin-top: 30px;
+}
+
+@media (max-width: 1200px) {
+  .politica p {
+    margin-top: 25px;
+  }
+}
+
+.politica p:first-child {
+  margin-top: 0;
+}
+
+.politica__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 134.4%;
+  letter-spacing: 0.035em;
+  color: #000000;
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 1550px) {
+  .politica__title {
+    font-size: 40px;
+    margin-bottom: 45px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .politica__title {
+    font-size: 35px;
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .politica__title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .politica__title {
+    font-size: clamp(20px, 6.4vw, 30px);
+    margin-bottom: 30px;
+  }
+}
+
 .why-we {
   padding: 80px 0 40px;
 }
@@ -1377,24 +1451,24 @@ template {
   }
 }
 
-.catagorys {
+.categorys {
   padding: 40px 0;
 }
 
 @media (max-width: 1200px) {
-  .catagorys {
+  .categorys {
     padding: 30px 0;
   }
 }
 
 @media (max-width: 768px) {
-  .catagorys {
+  .categorys {
     padding: 25px 0;
   }
 }
 
 @media (max-width: 575px) {
-  .catagorys {
+  .categorys {
     padding: 15px 0;
   }
 }
@@ -3862,7 +3936,7 @@ template {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 5;
+  z-index: 15;
 }
 
 @media (max-width: 768px) {
@@ -3925,6 +3999,7 @@ template {
 
 .header__menu-item {
   position: relative;
+  cursor: pointer;
 }
 
 .header__menu-item ul {
@@ -3937,7 +4012,7 @@ template {
   background: #FAF8F8;
   border-radius: 3px;
   box-shadow: -15px 22px 62px rgba(57, 87, 237, 0.1);
-  z-index: 10;
+  z-index: 12;
   padding: 10px;
 }
 

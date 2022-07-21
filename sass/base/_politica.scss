@@ -1,0 +1,54 @@
+.politica {
+    position: relative;
+    padding: 140px 0 40px;
+
+    @include for-desk {
+        padding-top: 120px;
+    }
+    @include for-phone {
+        padding: 120px 0 35px;
+    }
+
+    p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 134.4%;
+        color: #000000;
+        margin-top: 30px;
+
+        @include for-tablet-landscape {
+            margin-top: 25px;
+        }
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}
+.politica__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 134.4%;
+    letter-spacing: 0.035em;
+    color: #000000;
+    margin-top: 10px;
+    margin-bottom: 60px;
+
+    @include for-desk {
+        font-size: 40px;
+        margin-bottom: 45px;
+    }
+    @include for-tablet-landscape {
+        font-size: 35px;
+        margin-bottom: 35px;
+    }
+    @include for-phone-portrait {
+        font-size: 30px;
+    }
+    @include for-phone {
+        font-size: clamp(20px, 6.4vw, 30px);
+        margin-bottom: 30px;
+    }
+}

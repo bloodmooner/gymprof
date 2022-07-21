@@ -18,7 +18,7 @@
             <div class="container">
                 <div class="header__wrapper">
                     <div class="header__logo-mobile">
-                        <a href=""><img src="assets/svg/footer-logo.svg" alt="" width="45" height="54"></a>
+                        <a href="index.html"><img src="assets/svg/footer-logo.svg" alt="" width="45" height="54"></a>
                     </div>
                     <div class="header__info-mobile">
                         <p>Официальный дистрибьютор гимнастических ковров 
@@ -29,8 +29,8 @@
                             <li class="header__menu-item">
                                 <a href="" class="header__menu-link">Ковры <span><img src="assets/svg/dropdown-arrow.svg" alt="" width="9" height="4"></span></a>
                                 <ul>
-                                    <li><a href="">Ковры для художественной гимнастики</a></li>
-                                    <li><a href="">Ковры для спортивной гимнастики</a></li>
+                                    <li><a href="category-gymnastic.html">Ковры для художественной гимнастики</a></li>
+                                    <li><a href="category-sport.html">Ковры для спортивной гимнастики</a></li>
                                 </ul>
                             </li>
                             <li class="header__menu-item"><a href="">Помосты</a></li>
@@ -48,10 +48,10 @@
                                     <div class="header-mobile__item_header">Продукция</div>
                                     <ul class="header-mobile__list">
                                         <li class="header-mobile__item">
-                                            <a href="" class="header-mobile__link">Ковры для художественной гимнастики</a>
+                                            <a href="category-gymnastic.html" class="header-mobile__link">Ковры для художественной гимнастики</a>
                                         </li>
                                         <li class="header-mobile__item">
-                                            <a href="" class="header-mobile__link">Ковры для спортивной гимнастики</a>
+                                            <a href="category-sport.html" class="header-mobile__link">Ковры для спортивной гимнастики</a>
                                         </li>
                                         <li class="header-mobile__item">
                                             <a href="" class="header-mobile__link">Гимнастические помосты</a>
@@ -74,7 +74,7 @@
                         </div>
                     </div>
                     <div class="header__logo">
-                        <a href=""><img src="assets/svg/logo.svg" alt="" width="48" height="56"></a>
+                        <a href="index.html"><img src="assets/svg/logo.svg" alt="" width="48" height="56"></a>
                     </div>
                     <div class="header__contacts">
                         <a href="tel:+7 963 720-90-00" class="header__contacts_phone">+7 963 720-90-00</a>
@@ -82,7 +82,7 @@
                             <img src="assets/svg/cart.svg" alt="">
                             <span>12</span>
                         </a>
-                        <button class="btn btn_header">Связаться с нами</button>
+                        <button class="btn btn_header js-open-modal-order">Связаться с нами</button>
                     </div>
                     <div class="header__block-mobile">
                         <div class="header__cart-mobile">
@@ -107,8 +107,8 @@
                         от производителя
                     </h1>
                     <div class="promo__buttons">
-                        <button class="btn btn_promo">Оставить заявку</button>
-                        <button class="btn btn_promo_catalog">Смотреть каталог</button>
+                        <button class="btn btn_promo js-open-modal-order">Оставить заявку</button>
+                        <a href="#categorys" class="btn btn_promo_catalog promo__plan">Смотреть каталог</a>
                     </div>
                 </div>
             </div>
@@ -137,7 +137,7 @@
                             </div>
                         </li>
                     </ul>
-                    <button class="btn btn_promo-mobile">Оставить заявку</button>
+                    <button class="btn btn_promo-mobile js-open-modal-analysis">Оставить заявку</button>
                 </div>
             </div>
         </div>
@@ -187,25 +187,25 @@
                     <div class="sample__item_quality" style="background: url(assets/img/index/free-example-min.png) 0% 100%/cover no-repeat;">
                         <h2>Убедитесь в качестве!</h2>
                         <h3>Вы можете сами убедиться в качестве нашей продукции, для этого закажите бесплатный образец!</h3>
-                        <button class="btn btn_sample btn_sample-mobile">Заказать бесплатный образец</button>
+                        <button class="btn btn_sample btn_sample-mobile js-open-modal-analysis">Заказать бесплатный образец</button>
                     </div>
                     <div class="sample__item_modal">
-                        <button class="btn btn_sample">Заказать бесплатный образец</button>
+                        <button class="btn btn_sample js-open-modal-analysis">Заказать бесплатный образец</button>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="catagorys">
+        <section class="categorys" id="categorys">
             <div class="container">
                 <h2 class="categorys__title">Наша продукция</h2>
                 <ul class="categorys__wrapper">
                     <li class="categorys__item">    
                         <div class="categorys__item_top">
-                            <a href=""><img src="assets/img/index/products/products-1-min.png" alt="Ковры для художественной гимнастики" width="480" height="560"></a>
+                            <a href="category-gymnastic.html"><img src="assets/img/index/products/products-1-min.png" alt="Ковры для художественной гимнастики" width="480" height="560"></a>
                         </div>
                         <div class="categorys__item_bottom">
-                            <a href=""><h3>Ковры для художественной гимнастики</h3></a>
-                            <a href="" class="btn btn_categorys">Перейти &rarr; 
+                            <a href="category-gymnastic.html"><h3>Ковры для художественной гимнастики</h3></a>
+                            <a href="category-gymnastic.html" class="btn btn_categorys">Перейти &rarr; 
                                 <svg width="194" height="50" viewBox="0 0 194 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect x="0.5" y="0.5" width="193" height="49" rx="9.5" stroke="url(#paint0_linear_429_21)"/>
                                     <defs>
@@ -220,11 +220,11 @@
                     </li>
                     <li class="categorys__item">    
                         <div class="categorys__item_top">
-                            <a href=""><img src="assets/img/index/products/products-2-min.png" alt="Ковры для художественной гимнастики" width="480" height="560"></a>
+                            <a href="category-sport.html"><img src="assets/img/index/products/products-2-min.png" alt="Ковры для художественной гимнастики" width="480" height="560"></a>
                         </div>
                         <div class="categorys__item_bottom">
-                            <a href=""><h3>Ковры для спортивной гимнастики</h3></a>
-                            <a href="" class="btn btn_categorys">Перейти &rarr;
+                            <a href="category-sport.html"><h3>Ковры для спортивной гимнастики</h3></a>
+                            <a href="category-sport.html" class="btn btn_categorys">Перейти &rarr;
                                 <svg width="194" height="50" viewBox="0 0 194 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect x="0.5" y="0.5" width="193" height="49" rx="9.5" stroke="url(#paint0_linear_429_21)"/>
                                     <defs>
@@ -239,7 +239,7 @@
                     </li>
                     <li class="categorys__item">    
                         <div class="categorys__item_top">
-                            <a href=""><img src="assets/img/index/products/products-3-min.png" alt="Ковры для художественной гимнастики" width="480" height="560"></a>
+                            <a href=""><img src="assets/img/index/products/products-3-min.png" alt="Помосты для художественной гимнастики" width="480" height="560"></a>
                         </div>
                         <div class="categorys__item_bottom">
                             <a href=""><h3>Помосты для спортивной / художественной гимнастики</h3></a>
@@ -413,7 +413,7 @@
                                 <input type="text" class="applications__input" placeholder="Телефон*" id="applications__phone">
                             </div>
                             <button class="btn btn_form">Оставить заявку</button>
-                            <p class="applications__politics">Нажав на кнопку, соглашаюсь на обработку <a href="" target="_blank">персональных данных</a>
+                            <p class="applications__politics">Нажав на кнопку, соглашаюсь на обработку <a href="politic.html" target="_blank">персональных данных</a>
                             </p>
                         </form>
                     </div>
@@ -426,10 +426,85 @@
 
 
     <footer class="footer">
+        <!-- Подложка под модальным окном -->
+        <div class="overlays js-overlay-modal">
+            <div class="modal modal_order">
+                <div class="modal__container">
+                    <div class="modal__close">
+                        <img class="modal__close-icon" src="assets/svg/modal-close.svg" alt="close-modal" >
+                    </div>
+                    <div class="application application_modal">
+                        <div class="container">
+                            <div class="application__wrapper">
+                                <div class="application__outer">
+                                    <div class="application__name">
+                                        <h2 class="title application__title">
+                                            <span>Оставить заявку</span>
+                                        </h2>
+                                    </div>
+                                    <div class="application__inner">
+                                        <form action="#" class="application__form">
+                                            <input type="text" class="application__input" placeholder="Имя*">
+                                            <input type="text" class="application__input" placeholder="Телефон*">
+                                            <input type="text" class="application__input" placeholder="Почта">
+                                            <button class="btn application__btn btn_bwbtn">
+                                                <span>Оставить заявку</span>
+                                            </button>
+                                        </form>
+                                        <div class="application__polytics">
+                                            <p class="application__polytics-text">
+                                                Нажав на кнопку, соглашаюсь на обработку <a class="application__link" href="politic.html" target="_blank">персональных данных</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal modal_analysis">
+                <div class="modal__container">
+                    <div class="modal__close">
+                        <img class="modal__close-icon" src="assets/svg/modal-close.svg" alt="close-modal" >
+                    </div>
+                    <div class="application application_modal">
+                        <div class="container">
+                            <div class="application__wrapper">
+                                <div class="application__outer">
+                                    <div class="application__name">
+                                        <h2 class="title application__title">
+                                            <span>Закажите образец</span>
+                                        </h2>
+                                    </div>
+                                    <div class="application__inner">
+                                        <form action="#" class="application__form">
+                                            <input type="text" class="application__input" placeholder="Имя*">
+                                            <input type="text" class="application__input" placeholder="Телефон*">
+                                            <input type="text" class="application__input" placeholder="Почта">
+                                            <button class="btn application__btn btn_bwbtn">
+                                                <span>Оставить заявку</span>
+                                            </button>
+                                        </form>
+                                        <div class="application__polytics">
+                                            <p class="application__polytics-text">
+                                                Нажав на кнопку, соглашаюсь на обработку <a class="application__link" href="politic.html" target="_blank">персональных данных</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <div class="container">
             <div class="footer__block">
                 <div class="footer__block_logo">
-                    <a href=""><img src="assets/svg/footer-logo.svg" alt="logo" width="94" height="113" loading="lazy"></a>
+                    <a href="index.html"><img src="assets/svg/footer-logo.svg" alt="logo" width="94" height="113" loading="lazy"></a>
                     <ul class="footer__block_social">
                         <li><a href=""><img src="assets/svg/footer-vk.svg" alt="" width="26" height="26" loading="lazy"></a></li>
                         <li><a href=""><img src="assets/svg/footer-insta.svg" alt="" width="22" height="22" loading="lazy"></a></li>
@@ -437,8 +512,8 @@
                     </ul>
                 </div>
                 <ul class="footer__block_menu">
-                    <li><a href="">Ковры для худ. гимнастики</a></li>
-                    <li><a href="">Ковры для спорт. гимнастики</a></li>
+                    <li><a href="category-gymnastic.html">Ковры для худ. гимнастики</a></li>
+                    <li><a href="category-sport.html">Ковры для спорт. гимнастики</a></li>
                     <li><a href="">Помосты</a></li>
                     <li><a href="">Для дилеров</a></li>
                 </ul>
