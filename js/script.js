@@ -20,19 +20,34 @@ $(document).ready(function(){
 
   if (scroll > 0) sticky.addClass('fixed');
   else sticky.removeClass('fixed');
-});
+ });
 
 
-  $('.header__menu-list .header__menu-item:first-child a').on('click', function( e ){
+ //Dropdown
+  $('.header__menu-list .header__menu-item:first-child > a').on('click', function( e ){
     e.preventDefault();
-    // $('.header__menu-item').toggleClass('active');
 
   });
-  $('.header__menu-list .header__menu-item:first-child a').on('mouseover', function(){
-    $('.header__menu-item').addClass('active');
+
+  
+  $(".header__menu-list li").hover(function() {
+    var isHovered = $(this).is(":hover");
+    if (isHovered) {
+      $(this).children("ul").stop().slideDown(300);
+    } else {
+      $(this).children("ul").stop().slideUp(300);
+    }
   });
-  $('.header__menu-list .header__menu-item:first-child a').on('mouseout', function(){
-    $('.header__menu-item').removeClass('active');
+
+  //Smooth scroll
+  $("a.promo__plan").click(function() {
+    $("html, body").animate({
+       scrollTop: $($(this).attr("href")).offset().top + "px"
+    }, {
+       duration: 500,
+       easing: "swing"
+    });
+    return false;
   });
 
 

@@ -7,6 +7,7 @@
 @import 'base/breadcrumbs';
 @import 'base/promo';
 @import 'base/promo-category';
+@import 'base/politica';
 @import 'base/why-we';
 @import 'base/sample';
 @import 'base/categorys';
@@ -66,6 +67,7 @@ Montserrat: 300, 400, 500, 700
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
+  // scroll-behavior: smooth;
 }
 
 section, header, footer {
