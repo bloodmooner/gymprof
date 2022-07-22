@@ -17,29 +17,83 @@
     <header class="header">
         <div class="container">
             <div class="header__wrapper">
+                <div class="header__logo-mobile">
+                    <a href="index.html"><img src="assets/svg/footer-logo.svg" alt="" width="45" height="54"></a>
+                </div>
+                <div class="header__info-mobile">
+                    <p>Официальный дистрибьютор гимнастических ковров 
+                        из Голландии</p>
+                </div>
                 <nav class="header__menu">
                     <ul class="header__menu-list">
                         <li class="header__menu-item">
-                            <a href="" class="header__menu-link">Ковры <span><img src="assets/svg/dropdown-arrow.svg" alt="" width="9" height="4"></span></a>
+                            <a href="" class="header__menu-link"><span class="line">Ковры</span> <span class="drop"><img src="assets/svg/dropdown-arrow.svg" alt="" width="9" height="4"></span></a>
                             <ul>
-                                <li><a href="">Ковры для художественной гимнастики</a></li>
-                                <li><a href="">Ковры для спортивной гимнастики</a></li>
+                                <li><a href="category-gymnastic.html"><span class="line">Ковры для художественной гимнастики</span></a></li>
+                                <li><a href="category-sport.html"><span class="line">Ковры для спортивной гимнастики</span></a></li>
                             </ul>
                         </li>
-                        <li class="header__menu-item"><a href="">Помосты</a></li>
-                        <li class="header__menu-item"><a href="">Для дилеров</a></li>
-                    </ul>
+                        <li class="header__menu-item"><a href=""><span class="line">Помосты</span></a></li>
+                        <li class="header__menu-item"><a href=""><span class="line">Для дилеров</span></a></li>
+                    </ul>                           
                 </nav>
+                <div class="header-mobile">
+                    <div class="header-mobile__top">
+                        <div class="header-mobile__close">
+                            <a href="index.html"><img src="assets/svg/logo.svg" alt="logo" width="48" height="56"></a>
+                            <img class="header-mobile__close-image" alt="close" src="assets/svg/close.svg" width="24" height="24">
+                        </div>
+                        <div class="header-mobile__wrapper">
+                            <nav class="header-mobile__nav">
+                                <div class="header-mobile__item_header">Продукция</div>
+                                <ul class="header-mobile__list">
+                                    <li class="header-mobile__item">
+                                        <a href="category-gymnastic.html" class="header-mobile__link">Ковры для художественной гимнастики</a>
+                                    </li>
+                                    <li class="header-mobile__item">
+                                        <a href="category-sport.html" class="header-mobile__link">Ковры для спортивной гимнастики</a>
+                                    </li>
+                                    <li class="header-mobile__item">
+                                        <a href="" class="header-mobile__link">Гимнастические помосты</a>
+                                    </li>
+                                </ul>
+                                
+                            </nav>
+                            <div class="header-mobile__links">
+                                <div class="header-mobile__item_header">Компания</div>
+                                <ul class="header-mobile__list">
+                                    <li class="header-mobile__item">
+                                        <a href="" class="header-mobile__link">Для диллеров</a>
+                                    </li>
+                                </ul>
+                                <button class="btn btn_mobile-menu js-open-modal-order">Оставить заявку</button>
+                                <a class="header-mobile__contacts-tel" href="tel:+7 963 720-90-00">+7 963 720-90-00</a>
+                                <a class="header-mobile__contacts-mail" href="mailto:order@Gymprof.ru">order@Gymprof.ru</a>                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="header__logo">
-                    <a href=""><img src="assets/svg/logo.svg" alt="" width="48" height="56"></a>
+                    <a href="index.html"><img src="assets/svg/logo.svg" alt="" width="48" height="56"></a>
                 </div>
                 <div class="header__contacts">
                     <a href="tel:+7 963 720-90-00" class="header__contacts_phone">+7 963 720-90-00</a>
-                    <a href="" class="header__cart">
+                    <a href="cart.html" class="header__cart">
                         <img src="assets/svg/cart.svg" alt="">
                         <span>12</span>
                     </a>
-                    <button class="btn btn_header">Связаться с нами</button>
+                    <button class="btn btn_header js-open-modal-order"><span>Связаться с нами</span></button>
+                </div>
+                <div class="header__block-mobile">
+                    <div class="header__cart-mobile">
+                        <a href="cart.html" class="header__cart">
+                            <img src="assets/svg/carpet/add-to-cart.svg" alt="">
+                            <span>12</span>
+                        </a>
+                    </div>
+                    <div class="header__burger">
+                        <img class="header__burger-icon" src="assets/svg/burger.svg" alt="burger" >
+                    </div>
                 </div>
             </div>
         </div>
@@ -52,6 +106,19 @@
 
         <section class="product">
             <div class="container">
+                <div class="breadcrumb">
+                    <ul class="breadcrumb__list">
+                        <li class="breadcrumb__item">
+                            <a class="breadcrumb__link" href="index.html">Главная</a>
+                        </li>
+                        <li class="breadcrumb__item">
+                            <span class="breadcrumb__link">Ковры для художественной гимнастики</span>
+                        </li>
+                        <li class="breadcrumb__item">
+                            <span class="breadcrumb__link">Ковер гимнастический GYMSPORT PROF 8х6м</span>
+                        </li>
+                    </ul>
+                </div>
                 <div class="product__wrapper">
 
                     <div class="product__main">
@@ -154,7 +221,7 @@
                                 <div class="product__description-item">
                                     <div class="product__description-content">
                                         <h4 class="product__description-title">
-                                            Подложка Twin SportⓇ
+                                            Подложка Twin Sport&#174;
                                         </h4>
                                         <p class="product__description-descr">
                                             Состоит из 2-х слоев: Высококачественный слой 1-й джутовая основа - убирает эффект «мятого» ковра, 2-й слой из плотного,  иглопробивного войлока - обеспечивает дополнительную мягкость и амортизацию 
@@ -419,7 +486,7 @@
         <div class="container">
             <div class="footer__block">
                 <div class="footer__block_logo">
-                    <a href=""><img src="assets/svg/footer-logo.svg" alt="logo" width="94" height="113" loading="lazy"></a>
+                    <a href="index.html"><img src="assets/svg/footer-logo.svg" alt="logo" width="94" height="113" loading="lazy"></a>
                     <ul class="footer__block_social">
                         <li><a href=""><img src="assets/svg/footer-vk.svg" alt="" width="26" height="26" loading="lazy"></a></li>
                         <li><a href=""><img src="assets/svg/footer-insta.svg" alt="" width="22" height="22" loading="lazy"></a></li>
@@ -427,14 +494,14 @@
                     </ul>
                 </div>
                 <ul class="footer__block_menu">
-                    <li><a href="">Ковры для худ. гимнастики</a></li>
-                    <li><a href="">Ковры для спорт. гимнастики</a></li>
+                    <li><a href="category-gymnastic.html">Ковры для худ. гимнастики</a></li>
+                    <li><a href="category-sport.html">Ковры для спорт. гимнастики</a></li>
                     <li><a href="">Помосты</a></li>
                     <li><a href="">Для дилеров</a></li>
                 </ul>
             </div>
             <div class="footer__contacts">
-                <div>
+                <div class="footer__contacts_item">
                     <h3>Контакты:</h3>
                     <div class="footer__contacts_block">
                         <div class="footer__contacts_mail">
@@ -447,15 +514,22 @@
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <h3>Реквизиты:</h3>
-                        <ul class="footer__requisites_block">
-                            <li>ИП Орас Юрий Валерьевич</li>
-                            <li>ОГРНИП: 322774600014371</li>
-                            <li>ИНН: 772206637305</li>
+                <div class="footer__contacts_item">
+                    <div class="footer__contacts_item-social">
+                        <ul class="footer__block_social footer__block_social-mobile">
+                            <li><a href=""><img src="assets/svg/footer-vk.svg" alt="" width="26" height="26" loading="lazy"></a></li>
+                            <li><a href=""><img src="assets/svg/footer-insta.svg" alt="" width="22" height="22" loading="lazy"></a></li>
+                            <li><a href=""><img src="assets/svg/footer-telegram.svg" alt="" width="22" height="22" loading="lazy"></a></li>
                         </ul>
                     </div>
+                </div>
+                <div class="footer__contacts_item">
+                    <h3>Реквизиты:</h3>
+                    <ul class="footer__requisites_block">
+                        <li>ИП Орас Юрий Валерьевич</li>
+                        <li>ОГРНИП: 322774600014371</li>
+                        <li>ИНН: 772206637305</li>
+                    </ul>
                 </div>
             </div>
         </div>

@@ -1,12 +1,14 @@
 .showcase {
-    margin-top: 60px;
+    margin-top: 54px;
+    margin-bottom: 80px;
     @include for-phone-portrait {
         margin-top: 30px;
+        margin-bottom: 60px;
     }
     &__wrapper {
         display: grid;
         grid-template-columns: repeat(3, 480px);
-        grid-auto-rows: 600px;
+        grid-auto-rows: 560px;
         justify-content: space-between;
         @include for-desk {
             grid-template-columns: repeat(3, 1fr);
@@ -22,6 +24,7 @@
         }
         @include for-phone-portrait {
             grid-auto-rows: 350px;
+            margin-top: 30px;
         }
     }
 
@@ -97,6 +100,7 @@
             text-decoration: none;
         }
         &_nt {
+            font-size: 35px;
             margin-top: 20px;
             height: 16px;
             justify-content: start;
