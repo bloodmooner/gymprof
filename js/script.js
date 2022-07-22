@@ -252,5 +252,17 @@ $(document).ready(function(){
     $('.modal_analysis').removeClass('modal_analysis-active');
   });
 
+
+  //Textarea
+  $('.order__adress-row').on( 'change keydown keyup paste cut', 'textarea', function () {  
+    $(this).height(0).height(this.scrollHeight-20);
+    if ($(this).height() >= 50) {
+      $('textarea.order__adress-input').css("overflow", "auto");
+    }
+    else {
+      $('textarea.order__adress-input').css("overflow", "hidden");
+    }
+  }).find('textarea.order__adress-input').change();
+
 });
 
