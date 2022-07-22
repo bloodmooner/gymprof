@@ -14,18 +14,32 @@
     background: #000000;
     border-radius: 30px;
 
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    color: #FFFFFF;
-
     @include for-tablet-landscape {
         width: 155px;
         font-size: 13px;
     }
     @include for-tablet-portrait {
         display: none;
+    }
+
+    span {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        background: linear-gradient(180deg, #FFFFFF 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: #FFFFFF;
+        background-clip: text;
+        text-fill-color: transparent;
+
+        &:hover {
+            background: linear-gradient(90deg, #65F0F4 0%, #3957ED 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
     }
 }
 .btn_mobile-menu {
@@ -55,6 +69,10 @@
         width: 200px;
         height: 46px;
         font-size: 15px;
+    }
+
+    &:hover {
+        color: #000000;
     }
 }
 .btn_promo-mobile {
@@ -180,6 +198,22 @@
     }
     @include for-phone {
         margin: 0 auto;
+    }
+
+    span {
+        background: linear-gradient(180deg, #000000 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: #000000;
+        background-clip: text;
+        text-fill-color: transparent;
+
+        &:hover {
+            background: linear-gradient(90deg, #015EEA 0%, #00F2FE 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
     }
 }
 .btn_sample-mobile {
@@ -348,6 +382,10 @@
     font-size: 14px;
     line-height: 134.4%;
     color: #FFFFFF;
+
+    &:hover {
+        color: #FFFFFF;
+    }
 
     img {
         margin-right: 11px;
