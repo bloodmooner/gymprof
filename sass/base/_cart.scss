@@ -2,7 +2,7 @@
     margin-top: 98px;
     margin-bottom: 80px;
     @include for-phone-portrait {
-        margin-top: 55px;
+        margin-top: 115px;
         margin-bottom: 60px;
     }
 
@@ -368,6 +368,7 @@
     }
 
     &__totals-order {
+        display: inline-block;
         margin-top: 23px;
         padding: 20px 30px;
         background: linear-gradient(90deg, #015EEA 0%, #00F2FE 100%);
