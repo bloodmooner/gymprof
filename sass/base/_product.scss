@@ -1,5 +1,8 @@
 .product {
-
+    margin-top: 150px;
+    @include for-phone-portrait {
+        margin-top: 120px;
+    }
 
     .product__image-slider {
         .slick-slide {

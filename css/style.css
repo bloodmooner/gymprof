@@ -5567,6 +5567,16 @@ template {
   color: #000000;
 }
 
+.product {
+  margin-top: 150px;
+}
+
+@media (max-width: 768px) {
+  .product {
+    margin-top: 120px;
+  }
+}
+
 .product .product__image-slider .slick-slide {
   height: 625px;
 }
