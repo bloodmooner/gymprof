@@ -3,7 +3,7 @@
     margin-bottom: 80px;
     @include for-phone-portrait {
         margin-top: 55px;
-        margin-bottom: 55px;
+        margin-bottom: 60px;
     }
 
 
@@ -12,6 +12,9 @@
 
     &__header {
         position: relative;
+        @include for-phone-portrait {
+            margin-top: 6px;
+        }
     }
 
     &__title {
@@ -229,6 +232,7 @@
             width: 9px;
             img {
                 width: 100%;
+                margin-bottom: 4px;
             }
         }
     }
@@ -267,6 +271,7 @@
             width: 9px;
             img {
                 width: 100%;
+                margin-bottom: 3px;
             }
         }
     }
@@ -400,6 +405,7 @@
         @include for-phone-portrait {
             margin-top: 15px;  
             font-size: 12px;
+            display: none;
         }
         @include for-phone {
             text-align: center;

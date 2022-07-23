@@ -14,4 +14,7 @@
     font-size: 14px;
     line-height: 134.4%;
     color: #0093FD;
+    @include for-phone-portrait {
+        font-size: 12px;
+    }
 }

@@ -36,6 +36,9 @@
 
 .order {
     margin-top: 30px;
+    @include for-phone-portrait {
+        margin-top: 0;
+    }
     &__wrapper {
         max-width: 730px;
         margin: 0 auto;
