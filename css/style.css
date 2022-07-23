@@ -6978,6 +6978,7 @@ template {
   font-size: 16px;
   line-height: 135%;
   color: #FFFFFF;
+  text-align: center;
 }
 
 .cart__totals-order:hover {
