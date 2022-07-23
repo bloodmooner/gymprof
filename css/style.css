@@ -468,7 +468,9 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0 20px;
 }
 
 .breadcrumb__link {
@@ -4225,6 +4227,42 @@ template {
   }
 }
 
+.header-custome {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 15;
+}
+
+@media (max-width: 768px) {
+  .header-custome {
+    position: fixed;
+    background: -webkit-gradient(linear, left top, right top, from(#015EEA), to(#00F2FE));
+    background: linear-gradient(90deg, #015EEA 0%, #00F2FE 100%);
+  }
+}
+
+.header-custome .header__logo {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+@media (max-width: 1200px) {
+  .header-custome .header__logo {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-custome .header__logo {
+    display: none;
+  }
+}
+
 .header.fixed {
   position: fixed;
   top: 0;
@@ -6375,7 +6413,7 @@ template {
 
 @media (max-width: 768px) {
   .cart {
-    margin-top: 55px;
+    margin-top: 115px;
     margin-bottom: 60px;
   }
 }
@@ -6929,6 +6967,7 @@ template {
 }
 
 .cart__totals-order {
+  display: inline-block;
   margin-top: 23px;
   padding: 20px 30px;
   background: -webkit-gradient(linear, left top, right top, from(#015EEA), to(#00F2FE));
@@ -7032,7 +7071,7 @@ template {
 
 @media (max-width: 768px) {
   .order {
-    margin-top: 0;
+    margin-top: 130px;
   }
 }
 
@@ -7896,6 +7935,48 @@ template {
   font-size: 16px;
   line-height: 135%;
   color: #9D9797;
+}
+
+.order__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 304px;
+  width: 100%;
+  height: 45px;
+  background: linear-gradient(90.05deg, #015EEA 0.04%, #00F2FE 131.18%);
+  -webkit-box-shadow: -15px 22px 62px -5px rgba(57, 87, 237, 0.1);
+          box-shadow: -15px 22px 62px -5px rgba(57, 87, 237, 0.1);
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 575px) {
+  .order__header {
+    margin-bottom: 0;
+  }
+}
+
+.order__header_title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 134.4%;
+  letter-spacing: 0.035em;
+  color: #FFFFFF;
+}
+
+@media (max-width: 575px) {
+  .order__header_title {
+    font-size: clamp(20px, 6.4vw, 24px);
+  }
 }
 
 .video__content {

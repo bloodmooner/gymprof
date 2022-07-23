@@ -9,6 +9,34 @@
         background: linear-gradient(90deg, #015EEA 0%, #00F2FE 100%);
     }
 }
+.header-custome {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 15;
+    
+    @include for-phone-portrait {
+        position: fixed;
+        background: linear-gradient(90deg, #015EEA 0%, #00F2FE 100%);
+    }
+}
+.header-custome {
+    .header__logo {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    
+        @include for-tablet-landscape {
+            display: block;
+        }
+        @include for-phone-portrait {
+            display: none;
+        }
+    }
+}
+
 .header.fixed {
     position: fixed;
     top: 0;
