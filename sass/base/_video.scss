@@ -15,6 +15,10 @@
         iframe {
             border-radius: 10px;
         }
+
+        @include for-tablet-portrait {
+            height: 340px;
+        }
         
     }
     

@@ -170,7 +170,7 @@
     top: 50%;
     transform: translate(-50%, -50%);
 
-    @include for-tablet-landscape {
+    @include for-tablet-portrait {
         display: none;
     }
 }

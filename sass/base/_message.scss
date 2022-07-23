@@ -1,6 +1,9 @@
 .message {
     margin-top: 73px;
     @include for-phone-portrait {
+        margin-top: 40px;
+    }
+    @include for-phone {
         margin-top: 15px;
     }
     &__wrapper {

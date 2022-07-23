@@ -9,6 +9,7 @@
             height: 625px;
             div {
                 height: 625px;
+                
                 @include for-phone-portrait {
                     height: 340px;
                 }

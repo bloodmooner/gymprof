@@ -4428,7 +4428,7 @@ template {
           transform: translate(-50%, -50%);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 991px) {
   .header__logo {
     display: none;
   }
@@ -8005,6 +8005,12 @@ template {
   border-radius: 10px;
 }
 
+@media (max-width: 991px) {
+  .video__content {
+    height: 340px;
+  }
+}
+
 .video__play-btn {
   width: 150px;
   position: absolute;
@@ -8935,6 +8941,12 @@ template {
 }
 
 @media (max-width: 768px) {
+  .message {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 575px) {
   .message {
     margin-top: 15px;
   }
