@@ -27,6 +27,7 @@
             }
             @include for-phone-portrait {
                 font-size: 20px;
+                font-weight: 500;
             }
             @include for-phone {
                 font-size: 14px;

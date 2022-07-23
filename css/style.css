@@ -6922,6 +6922,12 @@ template {
   color: #000000;
 }
 
+@media (max-width: 768px) {
+  .cart__totals-price {
+    font-size: 20px;
+  }
+}
+
 .cart__totals-order {
   margin-top: 23px;
   padding: 20px 30px;
@@ -6950,13 +6956,13 @@ template {
   .cart__totals-order {
     max-width: 100%;
     width: 100%;
-    padding: 20px 20px;
+    padding: 12px 20px;
   }
 }
 
 @media (max-width: 420px) {
   .cart__totals-order {
-    padding: 20px 10px;
+    padding: 12px 10px;
     font-size: 12px;
   }
 }
@@ -8872,6 +8878,7 @@ template {
 @media (max-width: 768px) {
   .message__text p {
     font-size: 20px;
+    font-weight: 500;
   }
 }
 
@@ -9030,8 +9037,30 @@ template {
 }
 
 @media (max-width: 768px) {
+  .showcase__btn_nt {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 768px) {
   .showcase__btn {
     margin-top: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .showcase__image {
+    display: none;
+  }
+}
+
+.showcase__image_mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .showcase__image_mobile {
+    display: block;
   }
 }
 
