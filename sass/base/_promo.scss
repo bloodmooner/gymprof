@@ -5,6 +5,9 @@
     @include for-phone-portrait {
         padding-top: 85px;
     }
+    @include for-phone {
+        background: #faf8f8;
+    }
 }
 .promo__bg {
     padding: 151px 0 0;
@@ -24,9 +27,11 @@
         padding: 45px 0 0;
     }
     @include for-phone { 
-        background: url(../assets/img/index/index-mob.png) 50% 100%/cover no-repeat; 
+        // background: url(../assets/img/index/index-mob.png) 50% 100%/cover no-repeat; 
+        background: url(../assets/img/index/promo-mobil.png) 50% 100%/cover no-repeat; 
         padding: 90px 0 0;
-        height: 355px;
+        // height: 355px;
+        height: 65vw;
     }
 }
 .promo__block {
