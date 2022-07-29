@@ -35,8 +35,10 @@
         padding-top: 80px;
     }
     @include for-phone {
-        background: url(../assets/img/gym-carpet/gym-carpet-bg-mobile.png) center center/cover no-repeat; 
-        height: 300px;
+        // background: url(../assets/img/gym-carpet/gym-carpet-bg-mobile.png) center center/cover no-repeat; 
+        background: url(../assets/img/gym-carpet/3.png) center center/cover no-repeat; 
+        height: 85vw;
+        max-height: 400px;
     }
 }
 .promo-category__bg--sport {
@@ -46,7 +48,8 @@
         background-position: 64% 100%; 
     }
     @include for-phone {
-        background: url(../assets/img/sport-carpet/carpet-sport-mobile.png) center center/cover no-repeat; 
+        // background: url(../assets/img/sport-carpet/carpet-sport-mobile.png) center center/cover no-repeat; 
+        background: url(../assets/img/sport-carpet/2.png) center center/cover no-repeat; 
     }
 }
 .promo-category__title {

@@ -498,6 +498,12 @@ template {
   }
 }
 
+@media (max-width: 575px) {
+  .promo {
+    background: #faf8f8;
+  }
+}
+
 .promo__bg {
   padding: 151px 0 0;
   height: 771px;
@@ -527,9 +533,9 @@ template {
 
 @media (max-width: 575px) {
   .promo__bg {
-    background: url(../assets/img/index/index-mob.png) 50% 100%/cover no-repeat;
+    background: url(../assets/img/index/promo-mobil.png) 50% 100%/cover no-repeat;
     padding: 90px 0 0;
-    height: 355px;
+    height: 65vw;
   }
 }
 
@@ -770,8 +776,9 @@ template {
 
 @media (max-width: 575px) {
   .promo-category__bg {
-    background: url(../assets/img/gym-carpet/gym-carpet-bg-mobile.png) center center/cover no-repeat;
-    height: 300px;
+    background: url(../assets/img/gym-carpet/3.png) center center/cover no-repeat;
+    height: 85vw;
+    max-height: 400px;
   }
 }
 
@@ -787,7 +794,7 @@ template {
 
 @media (max-width: 575px) {
   .promo-category__bg--sport {
-    background: url(../assets/img/sport-carpet/carpet-sport-mobile.png) center center/cover no-repeat;
+    background: url(../assets/img/sport-carpet/2.png) center center/cover no-repeat;
   }
 }
 
