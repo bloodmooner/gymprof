@@ -47,6 +47,22 @@
             opacity: 1;
         }
     }
+    &_sample {
+      &-active {
+          opacity: 1;
+      }
+      .application__title {
+        font-size: 48px;
+        @include for-tablet-portrait {
+          font-size: 38px;
+          line-height: 45px;
+        }
+        @include for-phone-portrait {
+          font-size: 24px;
+          line-height: 100%;
+        }
+      }
+  }
   }
   .modal__container {
     position: relative;

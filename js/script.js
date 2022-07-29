@@ -91,6 +91,21 @@ $(document).ready(function(){
 
 
 
+    $('.product__credit-info').hover(function () {
+      if($('.product__credit-message').hasClass('product__credit-message_active')) {
+        console.log('ttt');
+        $('.product__credit-message').removeClass('product__credit-message_active');
+      } else {
+        $('.product__credit-message').addClass('product__credit-message_active');
+      }
+
+
+      
+
+      
+    });
+
+
       // START PRODUCT SLIDERS
 
       
@@ -256,6 +271,17 @@ $(document).ready(function(){
   $('.modal__close').on('click', function(){
     $('.overlays').removeClass('overlays_active');
     $('.modal_analysis').removeClass('modal_analysis-active');
+  });
+
+
+  $('.js-open-modal-sample').on('click', function(){
+    $('.overlays').addClass('overlays_active');
+    $('.modal_sample').addClass('modal_sample-active');
+  });
+ 
+  $('.modal__close').on('click', function(){
+    $('.overlays').removeClass('overlays_active');
+    $('.modal_sample').removeClass('modal_sample-active');
   });
 
 
