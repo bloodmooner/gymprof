@@ -18,9 +18,21 @@
                 height: 340px;
             }
             .reel {
+                border-radius: 10px;
                 @include for-phone-portrait {
                     height: 340px!important;
                 } 
+            }
+            .reel__wrapper {
+                background-color: #fff;
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                @include for-phone-portrait {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                }
             }
         }
     }

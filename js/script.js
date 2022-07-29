@@ -98,9 +98,10 @@ $(document).ready(function(){
         'vertical': true,
         'slidesToShow': 3,
         'arrows': true,
-        nextArrow: $(document).find('.product-slider__arrow_top'),
-        prevArrow: $(document).find('.product-slider__arrow_bottom'),
+        nextArrow: $(document).find('.product-slider__arrow_bottom'),
+        prevArrow: $(document).find('.product-slider__arrow_top'),
         asNavFor: '.product__image-slider',
+        focusOnSelect: true,
         responsive: [
           {
             breakpoint: 1200,
@@ -127,6 +128,8 @@ $(document).ready(function(){
     });
 
 
+    
+
     $('.product__image-slider').slick({
         'slidesToShow': 1,
         'arrows': false,
@@ -138,7 +141,10 @@ $(document).ready(function(){
     });
   
 
-
+    $('.product-slider__wrapper > div').click(function() {
+      console.log($(this).index());
+      $('.product__image-slider').slick('slickGoTo',$(this).index());
+    });
     
 
     let getSlideIndex = function(className) {

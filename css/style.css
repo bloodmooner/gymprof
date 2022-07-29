@@ -5597,9 +5597,36 @@ template {
   }
 }
 
+.product .product__image-slider .slick-slide .reel {
+  border-radius: 10px;
+}
+
 @media (max-width: 768px) {
   .product .product__image-slider .slick-slide .reel {
     height: 340px !important;
+  }
+}
+
+.product .product__image-slider .slick-slide .reel__wrapper {
+  background-color: #fff;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .product .product__image-slider .slick-slide .reel__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
   }
 }
 
