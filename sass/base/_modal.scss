@@ -75,8 +75,42 @@
       .application__wrapper {
         border-radius: 10px;
       }
-      .image-reel {
-        /* border-radius: 10px; */
+      /* .application__outer {
+        grid-template-columns: 1fr;
+        width: 460px;
+      } */
+      .application_modal {
+        width: 460px;
+        border-radius: 10px;
+        @include for-mobile-modal-small {
+          width: 300px!important;
+          height: 300px!important;
+        }
+        @include for-phone {
+          width: 300px!important;
+        }
+      }
+      #image-reel {
+        border-radius: 10px;
+      }
+      .product__reel {
+        @include for-mobile-modal-small {
+          width: 300px!important;
+          height: 300px!important;
+        }
+        @include for-phone {
+          width: 300px!important;
+        }
+      }
+      @include for-tablet-landscape {
+        width: 460px;
+      }
+      @include for-mobile-modal-small {
+        width: 300px!important;
+        height: 300px!important;
+      }
+      @include for-phone {
+        width: 300px!important;
       }
     }
   }

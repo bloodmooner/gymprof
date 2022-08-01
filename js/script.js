@@ -110,9 +110,10 @@ $(document).ready(function(){
 
       
       $('.product-slider__wrapper').slick({
-        'vertical': true,
-        'slidesToShow': 3,
-        'arrows': true,
+        vertical: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
         nextArrow: $(document).find('.product-slider__arrow_bottom'),
         prevArrow: $(document).find('.product-slider__arrow_top'),
         asNavFor: '.product__image-slider',
@@ -123,7 +124,7 @@ $(document).ready(function(){
             settings: {
               slidesToShow: 3,
               slidesToScroll: 1,
-              'vertical': false
+              vertical: false
             }
           },
           {
@@ -131,7 +132,7 @@ $(document).ready(function(){
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
-              'vertical': false,
+              vertical: false,
               dots: true,
               appendDots: $(document).find('.product-slider__dots')
             }
@@ -150,7 +151,19 @@ $(document).ready(function(){
         'arrows': false,
         fade: true,
         cssEase: 'linear',
-        swipe: false
+        swipe: false,
+        responsive: [
+          {
+            breakpoint: 769,
+            settings: {
+              swipe: true,
+              asNavFor: '.product-slider__wrapper',
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
     }).on('setPosition', function (event, slick) {
       slick.$slides.css('height', slick.$slideTrack.height() + 'px');
     });
@@ -307,6 +320,10 @@ $(document).ready(function(){
       $('textarea.order__adress-input').css("overflow", "hidden");
     }
   }).find('textarea.order__adress-input').change();
+
+
+
+  
 
 });
 

@@ -18,14 +18,14 @@
                 height: 340px;
             }
             .reel {
-                border-radius: 10px;
+                /* border-radius: 10px;
                 @include for-phone-portrait {
                     height: 340px!important;
-                } 
+                }  */
             }
             .reel__wrapper {
-                background-color: #fff;
-                border-radius: 10px;
+                /* background-color: #fff;
+                border-radius: 10px; */
                 /* display: flex;
                 justify-content: center; */
                 @include for-phone-portrait {
@@ -746,5 +746,27 @@
 
     &__image-item {
         height: 100%;
+        &_reel {
+            cursor: pointer;
+        }
+    }
+
+    .product__3d-image {
+        @include for-phone-portrait {
+            object-fit: none!important;
+        }
+    }
+
+    .product__3d-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 150px;
+        height: 150px;
+        transform: translate3d(-50%, -50%, 0);
+    }
+    
+    .reel__wrapper {
+        position: relative;
     }
 }
