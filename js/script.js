@@ -93,7 +93,7 @@ $(document).ready(function(){
 
     $('.product__credit-info').hover(function () {
       if($('.product__credit-message').hasClass('product__credit-message_active')) {
-        console.log('ttt');
+        
         $('.product__credit-message').removeClass('product__credit-message_active');
       } else {
         $('.product__credit-message').addClass('product__credit-message_active');
@@ -157,7 +157,7 @@ $(document).ready(function(){
   
 
     $('.product-slider__wrapper > div').click(function() {
-      console.log($(this).index());
+      
       $('.product__image-slider').slick('slickGoTo',$(this).index());
     });
     
@@ -177,8 +177,9 @@ $(document).ready(function(){
     };
 
     $('.icon-360').click(function() {
-      var slider = $('.product-slider__wrapper');
-      slider[0].slick.slickGoTo(parseInt(getSlideIndex('.reel')));
+      /* var slider = $('.product-slider__wrapper');
+      slider[0].slick.slickGoTo(parseInt(getSlideIndex('.reel'))); */
+
     }); 
     
     $('.icon-yt').click(function() {
@@ -282,6 +283,17 @@ $(document).ready(function(){
   $('.modal__close').on('click', function(){
     $('.overlays').removeClass('overlays_active');
     $('.modal_sample').removeClass('modal_sample-active');
+  });
+
+
+  $('.js-open-modal-model').on('click', function(){
+    $('.overlays').addClass('overlays_active');
+    $('.modal_model').addClass('modal_model-active');
+  });
+ 
+  $('.modal__close').on('click', function(){
+    $('.overlays').removeClass('overlays_active');
+    $('.modal_model').removeClass('modal_model-active');
   });
 
 

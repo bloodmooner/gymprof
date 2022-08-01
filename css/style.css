@@ -8865,6 +8865,7 @@ template {
   -webkit-transition: 1s all;
   transition: 1s all;
   z-index: 100;
+  display: none;
   opacity: 0;
 }
 
@@ -8883,14 +8884,17 @@ template {
 
 .modal_order-active {
   opacity: 1;
+  display: block;
 }
 
 .modal_analysis-active {
   opacity: 1;
+  display: block;
 }
 
 .modal_sample-active {
   opacity: 1;
+  display: block;
 }
 
 .modal_sample .application__title {
@@ -8909,6 +8913,19 @@ template {
     font-size: 24px;
     line-height: 100%;
   }
+}
+
+.modal_model-active {
+  opacity: 1;
+  display: block;
+}
+
+.modal_model .application__wrapper {
+  border-radius: 10px;
+}
+
+.modal_model .image-reel {
+  /* border-radius: 10px; */
 }
 
 .modal__container {
